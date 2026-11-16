@@ -1,41 +1,313 @@
 
-name: Update NBA Stats
+"""Generate NBA game logs and match Yahoo Fantasy Basketball positions.
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 11 * * *"
+NBA data source:
+https://github.com/llimllib/nba_data
 
-permissions:
-  contents: write
+Yahoo eligibility source:
+yahoo-positions.csv in the repository root.
 
-jobs:
-  update-stats:
-    runs-on: ubuntu-latest
+Requires duckdb and network access.
+"""
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+import csv
+import datetime as dt
+import json
+import os
+import unicodedata
+from pathlib import Path
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
+import duckdb
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install duckdb requests
 
-      - name: Retrieve NBA statistics
-        run: python scripts/update_stats.py
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "data"
+OUT.mkdir(exist_ok=True)
 
-      - name: Commit updated statistics
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/game_logs.csv
-          if ! git diff --cached --quiet; then
-            git commit -m "Update NBA player statistics"
-            git push
-          fi
+SEASON = int(os.getenv("NBA_SEASON", "2027"))
+DB = "https://basketball-data.billmill.org/nba/nba.duckdb"
+
+
+# --------------------------------------------------
+# 1. Normalize player names for matching
+# --------------------------------------------------
+
+def clean_name(name):
+    """Ignore accents, spaces, punctuation, and capitalization."""
+    name = unicodedata.normalize("NFKD", str(name or ""))
+    name = "".join(
+        c for c in name
+        if not unicodedata.combining(c)
+    )
+    return "".join(
+        c for c in name.lower()
+        if c.isalnum()
+    )
+
+
+# --------------------------------------------------
+# 2. Load Yahoo Fantasy Basketball positions
+# --------------------------------------------------
+
+yahoo_positions = {}
+yahoo_file = ROOT / "yahoo-positions.csv"
+
+if not yahoo_file.exists():
+    raise FileNotFoundError(
+        "Missing yahoo-positions.csv in repository root"
+    )
+
+with yahoo_file.open(
+    newline="", encoding="utf-8-sig"
+) as f:
+    reader = csv.DictReader(f)
+
+    if not {"player", "positions"}.issubset(
+        reader.fieldnames or []
+    ):
+        raise RuntimeError(
+            "yahoo-positions.csv must contain "
+            "'player' and 'positions' columns"
+        )
+
+    for entry in reader:
+        name = clean_name(entry["player"])
+        positions = entry["positions"].strip()
+
+        if name and positions:
+            yahoo_positions[name] = positions
+
+print(
+    f"Loaded Yahoo positions for "
+    f"{len(yahoo_positions)} players"
+)
+
+
+# --------------------------------------------------
+# 3. Connect to NBA statistics database
+# --------------------------------------------------
+
+con = duckdb.connect()
+
+con.execute(
+    f"ATTACH '{DB}' AS nba (READ_ONLY)"
+)
+
+required = {
+    "player_id", "game_id", "pts", "reb",
+    "ast", "stl", "blk", "tov"
+}
+
+columns = {
+    r[1]
+    for r in con.execute(
+        "PRAGMA table_info('nba.player_game_logs')"
+    ).fetchall()
+}
+
+missing = required - columns
+
+if missing:
+    raise RuntimeError(
+        "NBA player_game_logs missing columns: "
+        f"{sorted(missing)}"
+    )
+
+
+# --------------------------------------------------
+# 4. Download regular-season NBA game logs
+# --------------------------------------------------
+
+query = """
+SELECT
+    CAST(g.game_date AS VARCHAR) AS date,
+    l.player_id,
+    COALESCE(ps.name, p.name) AS player,
+    COALESCE(t.nba_abbrev, '') AS team,
+    l.pts,
+    l.reb,
+    l.ast,
+    l.stl,
+    l.blk,
+    l.tov
+FROM nba.player_game_logs l
+JOIN nba.games g
+    ON g.season = l.season
+    AND g.game_id = l.game_id
+JOIN nba.players p
+    ON p.player_id = l.player_id
+LEFT JOIN nba.player_seasons ps
+    ON ps.season = l.season
+    AND ps.player_id = l.player_id
+LEFT JOIN nba.team_seasons t
+    ON t.season = l.season
+    AND t.team_id = l.team_id
+WHERE
+    l.season = ?
+    AND g.game_type = 'regular_season'
+ORDER BY
+    g.game_date,
+    l.player_id
+"""
+
+result = con.execute(query, [SEASON])
+
+records = [
+    dict(zip(
+        [c[0] for c in result.description],
+        row
+    ))
+    for row in result.fetchall()
+]
+
+con.close()
+
+if len(records) < 100:
+    raise RuntimeError(
+        f"Only {len(records)} game logs returned. "
+        "Refusing to overwrite published data."
+    )
+
+print(f"Downloaded {len(records)} NBA game logs")
+
+
+# --------------------------------------------------
+# 5. Match Yahoo positions to NBA players
+# --------------------------------------------------
+
+matched_players = set()
+unmatched_players = set()
+
+for row in records:
+
+    player_name = clean_name(row["player"])
+
+    row["positions"] = yahoo_positions.get(
+        player_name, ""
+    )
+
+    if row["positions"]:
+        matched_players.add(player_name)
+    else:
+        unmatched_players.add(row["player"])
+
+    # Provisional Monday-Sunday fantasy week.
+    row["week"] = dt.date.fromisoformat(
+        row["date"]
+    ).strftime("%G-W%V")
+
+    # Double-double: 10+ in at least two categories.
+    double_digit_categories = sum(
+        float(row[k] or 0) >= 10
+        for k in (
+            "pts", "reb", "ast", "stl", "blk"
+        )
+    )
+
+    row["dd"] = int(
+        double_digit_categories >= 2
+    )
+
+    # Convert NBA statistics to numbers.
+    for k in (
+        "pts", "reb", "ast",
+        "stl", "blk", "tov"
+    ):
+        row[k] = float(row[k] or 0)
+
+
+# --------------------------------------------------
+# 6. Report position matching results
+# --------------------------------------------------
+
+print(
+    f"Yahoo positions matched: "
+    f"{len(matched_players)} NBA players"
+)
+
+print(
+    f"NBA players without Yahoo positions: "
+    f"{len(unmatched_players)}"
+)
+
+if unmatched_players:
+    print("First 30 unmatched NBA players:")
+
+    for name in sorted(unmatched_players)[:30]:
+        print(f"  - {name}")
+
+
+# --------------------------------------------------
+# 7. Export game logs for the website
+# --------------------------------------------------
+
+fields = [
+    "date",
+    "player_id",
+    "player",
+    "team",
+    "positions",
+    "pts",
+    "reb",
+    "ast",
+    "stl",
+    "blk",
+    "tov",
+    "week",
+    "dd"
+]
+
+output_file = OUT / "game_logs.csv"
+
+with output_file.open(
+    "w", newline="", encoding="utf-8"
+) as f:
+
+    writer = csv.DictWriter(
+        f, fieldnames=fields
+    )
+
+    writer.writeheader()
+    writer.writerows(records)
+
+
+# --------------------------------------------------
+# 8. Update website status information
+# --------------------------------------------------
+
+latest_date = max(
+    row["date"] for row in records
+)
+
+status = {
+    "season": (
+        f"{SEASON-1}–{str(SEASON)[-2:]}"
+    ),
+    "updated_utc": (
+        dt.datetime.now(
+            dt.timezone.utc
+        ).isoformat()
+    ),
+    "games_logged": len(records),
+    "latest_game_date": latest_date,
+    "positions_source": (
+        "Yahoo screenshot-derived player eligibility"
+    ),
+    "positions_matched": len(matched_players),
+    "positions_unmatched": len(unmatched_players),
+    "week_source": (
+        "ISO Monday–Sunday (provisional)"
+    )
+}
+
+(OUT / "status.json").write_text(
+    json.dumps(status, indent=2) + "\n",
+    encoding="utf-8"
+)
+
+print(
+    f"Exported {len(records)} game logs "
+    f"through {latest_date}"
+)
+
+print("NBA statistics update complete.")
