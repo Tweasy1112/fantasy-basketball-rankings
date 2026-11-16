@@ -1,0 +1,3 @@
+date,player_id,player,team,positions,pts,reb,ast,stl,blk,tov,week
+2026-10-20,12345,Example Player,BOS,PG/SG,25,8,12,2,0,3,1
+2026-10-22,12345,Example Player,BOS,PG/SG,30,5,7,1,0,2,1
