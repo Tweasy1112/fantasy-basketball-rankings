@@ -43,18 +43,32 @@ records = [dict(zip([c[0] for c in result.description], row)) for row in result.
 if len(records) < 100:
     raise RuntimeError(f'Only {len(records)} rows returned; refusing to replace published data')
 
-# Yahoo eligibility cannot be inferred reliably from generic NBA positions.
-# positions.csv is a manually maintained Yahoo-eligibility override.
+# Match Yahoo player names to NBA game-log names.
+import unicodedata
+
+def clean_name(name):
+    name = unicodedata.normalize("NFKD", str(name or ""))
+    name = "".join(
+        c for c in name if not unicodedata.combining(c)
+    )
+    return "".join(c for c in name.lower() if c.isalnum())
+
 positions = {}
-pos_file = ROOT / 'positions.csv'
-if pos_file.exists():
-    with pos_file.open(newline='', encoding='utf-8-sig') as f:
-        for row in csv.DictReader(f):
-            if row.get('player_id'):
-                positions[row['player_id']] = row.get('positions', '')
+pos_file = ROOT / 'yahoo-positions.csv'
+
+if not pos_file.exists():
+    raise FileNotFoundError(f'Missing Yahoo positions file: {pos_file}')
+
+with pos_file.open(newline='', encoding='utf-8-sig') as f:
+    for entry in csv.DictReader(f):
+        name = clean_name(entry.get('player', ''))
+        if name:
+            positions[name] = entry.get('positions', '')
+
+print(f'Loaded Yahoo positions for {len(positions)} players')
 
 for row in records:
-    row['positions'] = positions.get(str(row['player_id']), '')
+    row['positions'] = positions.get(clean_name(row['player']), '')
     # ISO Monday-Sunday is PROVISIONAL until league-specific week boundaries are supplied.
     row['week'] = dt.date.fromisoformat(row['date']).strftime('%G-W%V')
     row['dd'] = int(sum(float(row[k] or 0) >= 10 for k in ('pts','reb','ast','stl','blk')) >= 2)
