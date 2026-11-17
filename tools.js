@@ -25,27 +25,88 @@ function model(){if(cacheRows===rows&&cached)return cached;const all=aggregates(
  const result=new Map();for(const p of all){const x=s.get(String(p.id));const replacement=Math.min(...p.positions.filter(pos=>baselines[pos]!==undefined).map(pos=>baselines[pos]));const baseline=Number.isFinite(replacement)?replacement:0;
  const surplus=Math.max(0,x.expected-baseline);const uncertainty=1-Math.min(.20,2/(x.weeks+5));
  // Experimental: value scale is projected weekly surplus + a small production component.
- const value=Math.max(0,(surplus+.22*x.expected)*uncertainty);
+ const value=Math.max(0,(surplus+.22*x.expected)*uncertainty)*100;
  result.set(String(p.id),{...x,value,baseline,surplus,player:p});}
  cached=result;cacheRows=rows;return result;}
+const V=n=>Math.round(n).toLocaleString("en-US");
 function playerList(){return [...model().values()].sort((a,b)=>b.value-a.value||a.player.name.localeCompare(b.player.name));}
-function optionHtml(selected='',slot='',exclude=[]){let list=playerList().filter(x=>(!slot||can(slot,x.player))&&(!exclude.includes(x.player.id)||String(x.player.id)===String(selected)));return '<option value="">Select player…</option>'+list.map(x=>`<option value="${E(x.player.id)}" ${String(x.player.id)===String(selected)?'selected':''}>${E(x.player.name)} · ${E(x.player.positions.join('/'))} · ${x.value.toFixed(1)}</option>`).join('');}
+function optionHtml(selected='',slot='',exclude=[]){let list=playerList().filter(x=>(!slot||can(slot,x.player))&&(!exclude.includes(x.player.id)||String(x.player.id)===String(selected)));return '<option value="">Select player…</option>'+list.map(x=>`<option value="${E(x.player.id)}" ${String(x.player.id)===String(selected)?'selected':''}>${E(x.player.name)} · ${E(x.player.positions.join('/'))} · ${V(x.value)}</option>`).join('');}
 function playerSelect(selected,slot,exclude,attr){return `<select class="tool-input" ${attr}>${optionHtml(selected,slot,exclude)}</select>`;}
+// Searchable trade-only player picker: case/accent-insensitive substring matching.
+function tradePicker(id,side,i){const name=id?getName(id):'';return `<div class="trade-picker" data-picker="${side}" data-i="${i}"><input class="tool-input trade-search" type="text" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-label="Search player by first or last name" placeholder="Type a first or last name…" value="${E(name)}"><div class="trade-results" role="listbox" hidden></div></div>`;}
+const normalized=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+function wireTradePickers(){
+ const root=$('tradeView');
+ root.querySelectorAll('.trade-picker').forEach(picker=>{
+  const input=picker.querySelector('input'),menu=picker.querySelector('.trade-results');
+  const side=picker.dataset.picker,i=+picker.dataset.i;
+  let active=0, matches=[];
+  const current=()=>side==='give'?tradeGive:tradeGet;
+  function close(){menu.hidden=true;input.setAttribute('aria-expanded','false');}
+  function select(id){current()[i]=String(id);renderTrade();}
+  function draw(){
+   const q=normalized(input.value);
+   const taken=new Set([...tradeGive,...tradeGet].filter(Boolean).map(String));
+   taken.delete(String(current()[i]));
+   matches=playerList().filter(x=>!taken.has(String(x.player.id))&&(!q||normalized(x.player.name).includes(q))).slice(0,35);
+   active=0;
+   menu.innerHTML=matches.length?matches.map((x,j)=>`<button type="button" role="option" class="trade-result${j===active?' active':''}" data-id="${E(x.player.id)}" aria-selected="${j===active}"><span>${E(x.player.name)}<small>${E(x.player.positions.join('/'))}</small></span><strong>${V(x.value)}</strong></button>`).join(''):'<div class="trade-no-results">No matching players</div>';
+   menu.hidden=false;input.setAttribute('aria-expanded','true');
+  }
+  input.addEventListener('focus',()=>{input.select();draw()});
+  input.addEventListener('input',draw);
+  input.addEventListener('keydown',e=>{
+   if(e.key==='Escape'){close();input.blur();return;}
+   if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();if(menu.hidden)draw();else if(matches.length){active=(active+(e.key==='ArrowDown'?1:-1)+matches.length)%matches.length;menu.querySelectorAll('.trade-result').forEach((b,j)=>{b.classList.toggle('active',j===active);b.setAttribute('aria-selected',String(j===active));});menu.querySelectorAll('.trade-result')[active]?.scrollIntoView({block:'nearest'});}return;}
+   if(e.key==='Enter'&&!menu.hidden&&matches.length){e.preventDefault();select(matches[active].player.id);}
+  });
+  menu.addEventListener('pointerdown',e=>e.preventDefault());
+  menu.addEventListener('click',e=>{const btn=e.target.closest('[data-id]');if(btn)select(btn.dataset.id)});
+  input.addEventListener('blur',()=>{close();input.value=current()[i]?getName(current()[i]):'';});
+ });
+}
 function getVal(id){return model().get(String(id))?.value||0;}
 function getName(id){return model().get(String(id))?.player.name||'Unknown player';}
 function sum(ids){return ids.reduce((a,id)=>a+getVal(id),0);}
 function switchView(view){for(const v of ['rankings','trade','lineups','teams'])$(v+'View').hidden=v!==view;document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===view));if(view==='trade')renderTrade();if(view==='lineups')renderLineups();if(view==='teams')renderTeams();}
 document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>switchView(b.dataset.view));
 function addSelector(side){let arr=side==='give'?tradeGive:tradeGet;arr.push('');renderTrade();}
+// Fair Trade Finder: ranked suggestions centered on the exact balancing value.
+// Suggestions are raw-value comparisons, not guarantees of improved lineup value.
+function fairTradeFinder(a,b){
+ if(!a.length||!b.length)return '';
+ const difference=sum(b)-sum(a);
+ const side=difference<0?'get':'give';
+ const target=Math.abs(difference);
+ const chosen=new Set([...a,...b].map(String));
+ const pool=playerList().filter(x=>!chosen.has(String(x.player.id)));
+ if(!pool.length)return '';
+ // The first candidate whose value is at or below the target is the scroll anchor.
+ let pivot=pool.findIndex(x=>x.value<=target);
+ if(pivot<0)pivot=pool.length-1;
+ const heading=difference===0?'The current player totals are balanced':`Add approximately ${V(target)} in value to ${side==='get'?'You receive':'You give'} to balance the trade`;
+ return `<section class="fair-finder"><div class="fair-header"><div><h3>Fair Trade Finder</h3><p class="tool-subtle">${E(heading)}. Ranked highest to lowest, automatically positioned near ${V(target)}.</p></div><div class="fair-target">Target <strong>${V(target)}</strong></div></div>
+ <div class="fair-finder-controls"><label class="tool-subtle" for="fairFilter">Filter player names</label><input id="fairFilter" class="tool-input" type="search" placeholder="Search first or last name…" autocomplete="off"><button type="button" class="tool-btn alt" id="fairJump">Jump to fair-value range</button></div>
+ <div class="fair-list" id="fairList" role="list" aria-label="Available players ranked by trade value">${pool.map((x,i)=>`<div role="listitem" class="fair-player${i===pivot?' fair-pivot':''}" data-fair-index="${i}" data-fair-name="${E(normalized(x.player.name))}"><span class="fair-rank">#${i+1}</span><span class="fair-player-name"><strong>${E(x.player.name)}</strong><small>${E(x.player.positions.join('/'))}</small></span><span class="fair-number">${V(x.value)}</span><span class="fair-gap">${x.value>=target?'+':''}${V(x.value-target)}</span><button class="tool-btn alt fair-add" type="button" data-fair-id="${E(x.player.id)}" data-fair-side="${side}">+ ${side==='get'?'Receive':'Give'}</button></div>`).join('')}</div>
+ <p class="tool-subtle">Difference column = player's value minus the amount needed. A value near zero is the closest one-player match. Adding a player changes roster counts and may require dropping or replacing someone; evaluate the updated break-even guidance above.</p></section>`;
+}
+function wireFairTradeFinder(){
+ const list=$('fairList');if(!list)return;
+ const jump=()=>{const anchor=list.querySelector('.fair-pivot:not([hidden])');if(anchor)list.scrollTop=anchor.offsetTop-list.offsetTop-list.clientHeight/2+anchor.offsetHeight/2;};
+ jump();$('fairJump').onclick=()=>{$('fairFilter').value='';list.querySelectorAll('.fair-player').forEach(x=>x.hidden=false);jump();};
+ $('fairFilter').oninput=e=>{const q=normalized(e.target.value);list.querySelectorAll('.fair-player').forEach(x=>x.hidden=!x.dataset.fairName.includes(q));};
+ list.onclick=e=>{const btn=e.target.closest('[data-fair-id]');if(!btn)return;const arr=btn.dataset.fairSide==='give'?tradeGive:tradeGet;const empty=arr.indexOf('');if(empty>=0)arr[empty]=btn.dataset.fairId;else arr.push(btn.dataset.fairId);renderTrade();};
+}
 function renderTrade(){let ready=playerList().length>0;
- $('tradeView').innerHTML=`<section class="panel tool-pad"><div class="tool-heading"><div><h2>Trade Calculator</h2><p class="muted">Compare experimental player trade values, including weekly High Score production and positional scarcity.</p></div></div>${!ready?'<p class="tool-notice">Waiting for NBA game logs and Yahoo positions.</p>':''}<div class="tool-grid">${['give','get'].map(side=>{let arr=side==='give'?tradeGive:tradeGet;return `<div class="tool-card"><h3>${side==='give'?'You give':'You receive'}</h3>${arr.map((id,i)=>`<div class="tool-row">${playerSelect(id,'',arr.filter((x,j)=>j!==i),'data-trade="'+side+'" data-i="'+i+'"')}<button class="small-action" data-remove="${side}" data-i="${i}" aria-label="Remove player">×</button></div>`).join('')}<div class="tool-actions"><button class="tool-btn alt" data-add="${side}">+ Add player</button></div><div class="tool-metric">${sum(arr).toFixed(1)}</div><span class="tool-subtle">Combined trade value</span></div>`}).join('')}</div><div id="tradeAnalysis"></div><p class="tool-footer">Experimental values are not actual Yahoo trade values. Role/injury status is not yet connected to a verified live injury feed; no injury assumptions are made. Historical High Score weeks currently use provisional Monday–Sunday boundaries.</p></section>`;
- $('tradeView').querySelectorAll('[data-trade]').forEach(el=>el.onchange=()=>{(el.dataset.trade==='give'?tradeGive:tradeGet)[+el.dataset.i]=el.value;renderTrade()});
+ $('tradeView').innerHTML=`<section class="panel tool-pad"><div class="tool-heading"><div><h2>Trade Calculator</h2><p class="muted">Compare experimental player trade values, including weekly High Score production and positional scarcity.</p></div></div>${!ready?'<p class="tool-notice">Waiting for NBA game logs and Yahoo positions.</p>':''}<div class="tool-grid">${['give','get'].map(side=>{let arr=side==='give'?tradeGive:tradeGet;return `<div class="tool-card"><h3>${side==='give'?'You give':'You receive'}</h3>${arr.map((id,i)=>`<div class="tool-row">${tradePicker(id,side,i)}<button class="small-action" data-remove="${side}" data-i="${i}" aria-label="Remove player">×</button></div>`).join('')}<div class="tool-actions"><button class="tool-btn alt" data-add="${side}">+ Add player</button></div><div class="tool-metric">${V(sum(arr))}</div><span class="tool-subtle">Combined trade value</span></div>`}).join('')}</div><div id="tradeAnalysis"></div><p class="tool-footer">Experimental values are not actual Yahoo trade values. Role/injury status is not yet connected to a verified live injury feed; no injury assumptions are made. Historical High Score weeks currently use provisional Monday–Sunday boundaries.</p></section>`;
+ wireTradePickers();
  $('tradeView').querySelectorAll('[data-add]').forEach(el=>el.onclick=()=>addSelector(el.dataset.add));
  $('tradeView').querySelectorAll('[data-remove]').forEach(el=>el.onclick=()=>{let arr=el.dataset.remove==='give'?tradeGive:tradeGet;arr.splice(+el.dataset.i,1);if(!arr.length)arr.push('');renderTrade()});
  const a=tradeGive.filter(Boolean),b=tradeGet.filter(Boolean),diff=sum(b)-sum(a),extra=b.length-a.length;
  let msg='Select players on both sides to see the trade analysis.';
- if(a.length&&b.length){const low=b.map(getVal).sort((x,y)=>x-y)[0];if(extra>0){msg=`You receive ${extra} extra player${extra===1?'':'s'} and must free ${extra} roster spot${extra===1?'':'s'}. The COMBINED value of the players you drop must be ${diff.toFixed(1)} or lower to break even${diff<0?' (impossible with nonnegative values)':''}. ${extra===1?`The lowest-valued incoming player is ${low.toFixed(1)}, but the correct break-even threshold is ${diff.toFixed(1)}.`:''}`;}else if(extra<0){msg=`You free ${-extra} roster spot${extra===-1?'':'s'}. To break even, the COMBINED value of players you add in those spots must be at least ${(-diff).toFixed(1)}. If the number is negative, the trade already gains value before replacements.`;}else{msg=`Same number of players exchanged. ${diff>=0?'Receiving side gains':'Receiving side loses'} ${Math.abs(diff).toFixed(1)} trade-value units before lineup fit.`;}}
- $('tradeAnalysis').innerHTML=`<div class="tool-stats"><div class="tool-stat"><strong>${sum(a).toFixed(1)}</strong><span>Outgoing value</span></div><div class="tool-stat"><strong>${sum(b).toFixed(1)}</strong><span>Incoming value</span></div><div class="tool-stat"><strong class="${diff>=0?'tool-good':'tool-warning'}">${diff>0?'+':''}${diff.toFixed(1)}</strong><span>Before roster-slot changes</span></div></div><div class="tool-notice">${E(msg)}</div>${a.length&&b.length?'<p class="tool-subtle">Compare both sides using the same units. A positive difference alone does not guarantee a better lineup; available roster spots, position fit, and replacements matter.</p>':''}`;
+ if(a.length&&b.length){const low=b.map(getVal).sort((x,y)=>x-y)[0];if(extra>0){msg=`You receive ${extra} extra player${extra===1?'':'s'} and must free ${extra} roster spot${extra===1?'':'s'}. The COMBINED value of the players you drop must be ${V(diff)} or lower to break even${diff<0?' (impossible with nonnegative values)':''}. ${extra===1?`The lowest-valued incoming player is ${V(low)}, but the correct break-even threshold is ${V(diff)}.`:''}`;}else if(extra<0){msg=`You free ${-extra} roster spot${extra===-1?'':'s'}. To break even, the COMBINED value of players you add in those spots must be at least ${V(-diff)}. If the number is negative, the trade already gains value before replacements.`;}else{msg=`Same number of players exchanged. ${diff>=0?'Receiving side gains':'Receiving side loses'} ${V(Math.abs(diff))} trade-value units before lineup fit.`;}}
+ $('tradeAnalysis').innerHTML=`<div class="tool-stats"><div class="tool-stat"><strong>${V(sum(a))}</strong><span>Outgoing value</span></div><div class="tool-stat"><strong>${V(sum(b))}</strong><span>Incoming value</span></div><div class="tool-stat"><strong class="${diff>=0?'tool-good':'tool-warning'}">${diff>0?'+':''}${V(diff)}</strong><span>Before roster-slot changes</span></div></div><div class="tool-notice">${E(msg)}</div>${a.length&&b.length?'<p class="tool-subtle">Compare both sides using the same units. A positive difference alone does not guarantee a better lineup; available roster spots, position fit, and replacements matter.</p>':''}${a.length&&b.length?fairTradeFinder(a,b):''}`;
+ wireFairTradeFinder();
 }
 // Max-weight legal assignment of up to 13 slots, allowing a bench. Dynamic programming over slot masks.
 function optimize(ids){const available=[...new Set(ids.filter(id=>model().has(String(id))))].slice(0,30);let dp=new Map([[0,{score:0,assigned:Array(13).fill('')}]]);for(const id of available){const next=new Map(dp);const p=model().get(String(id));for(const [mask,st] of dp){for(let j=0;j<13;j++){if(mask&(1<<j)||!can(SLOTS[j],p.player))continue;const m=mask|(1<<j),score=st.score+p.expected;const old=next.get(m);if(!old||score>old.score){let assigned=st.assigned.slice();assigned[j]=id;next.set(m,{score,assigned});}}}dp=next;}let best={score:0,assigned:Array(13).fill('')};for(const st of dp.values())if(st.score>best.score)best=st;return best.assigned;}
