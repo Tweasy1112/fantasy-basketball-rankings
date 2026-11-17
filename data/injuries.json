@@ -1,6 +1,365 @@
 {
-  "updated_at": null,
+  "updated_at": "2026-11-17T15:34-05:00",
+  "report_snapshot_et": "2026-11-17T15:30-05:00",
   "source": "Official NBA injury reports via nbainjuries",
-  "coverage_note": "Awaiting first successful GitHub Actions run. No injury status is confirmed.",
-  "players": []
+  "coverage_note": "Only players included in the retrieved report. Missing players are not necessarily healthy.",
+  "players": [
+    {
+      "name": "Scottie Barnes",
+      "status": "Questionable",
+      "reason": "Injury/Illness - Illness",
+      "team": "Toronto Raptors",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Nate Bittle",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Foot Avulsion Fracture",
+      "team": "Toronto Raptors",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Kawhi Leonard",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Knee Injury Management",
+      "team": "Toronto Raptors",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Kevin McCullar Jr.",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Toronto Raptors",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Malachi Smith",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Toronto Raptors",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Jalen Duren",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Hamstring Strain",
+      "team": "Detroit Pistons",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Ronald Holland II",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Knee Contusion / Bone Bruise",
+      "team": "Detroit Pistons",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Isaiah Joe",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Hip Contusion",
+      "team": "Detroit Pistons",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Ebuka Okorie",
+      "status": "Out",
+      "reason": "G League - On Assignment",
+      "team": "Detroit Pistons",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Ugonna Onyenso",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Detroit Pistons",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Taurean Prince",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Knee Soreness",
+      "team": "Detroit Pistons",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Duncan Robinson",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Quadriceps Strain",
+      "team": "Detroit Pistons",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Maliq Brown",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "San Antonio Spurs",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Ja'Kobi Gillespie",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "San Antonio Spurs",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Tobias Harris",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Calf Strain",
+      "team": "San Antonio Spurs",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Jayden Quaintance",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Knee Surgery",
+      "team": "San Antonio Spurs",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Deni Avdija",
+      "status": "Questionable",
+      "reason": "Injury/Illness - Left Foot Inflammation / Soreness",
+      "team": "Portland Trail Blazers",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Branden Carlson",
+      "status": "Available",
+      "reason": "Injury/Illness - Face Mask",
+      "team": "Portland Trail Blazers",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Vit Krejci",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Ankle Fracture",
+      "team": "Portland Trail Blazers",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Ja Morant",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Hamstring Strain",
+      "team": "Portland Trail Blazers",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Shaedon Sharpe",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Meniscus Surgery",
+      "team": "Portland Trail Blazers",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Chris Youngblood",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Heel Contusion / Bone Bruise",
+      "team": "Portland Trail Blazers",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Joan Beringer",
+      "status": "Available",
+      "reason": "Injury/Illness - Face Mask",
+      "team": "Minnesota Timberwolves",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Jaylen Clark",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Hamstring Strain",
+      "team": "Minnesota Timberwolves",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Donte DiVincenzo",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
+      "team": "Minnesota Timberwolves",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Anthony Edwards",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Knee Arthroscopy",
+      "team": "Minnesota Timberwolves",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Jonathan Kuminga",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Shoulder Contusion",
+      "team": "Minnesota Timberwolves",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Zyon Pullin",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Quadriceps Contusion",
+      "team": "Minnesota Timberwolves",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Kobe Bufkin",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Utah Jazz",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Jaxson Hayes",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Knee Strain",
+      "team": "Utah Jazz",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Harrison Ingram",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Utah Jazz",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Jaren Jackson Jr.",
+      "status": "Out",
+      "reason": "Injury/Illness - Right MCL Tear",
+      "team": "Utah Jazz",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Lauri Markkanen",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Hand Fracture",
+      "team": "Utah Jazz",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Jusuf Nurkic",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Right Foot; 2nd Plantar Plate Tear",
+      "team": "Utah Jazz",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Bradley Beal",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Knee Injury Management",
+      "team": "LA Clippers",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Brandon Ingram",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Heel Surgery",
+      "team": "LA Clippers",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Jordan Miller",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Rotator Cuff Surgery",
+      "team": "LA Clippers",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Yanic Konan Niederhauser",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Lisfranc Surgery",
+      "team": "LA Clippers",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Michael Ajayi",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Charlotte Hornets",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Kylan Boswell",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Charlotte Hornets",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Kon Knueppel",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Hamstring Strain",
+      "team": "Charlotte Hornets",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Dennis Schroder",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Hamstring Strain",
+      "team": "Charlotte Hornets",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Hannes Steinbach",
+      "status": "Out",
+      "reason": "G League - On Assignment",
+      "team": "Charlotte Hornets",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Quentin Grimes",
+      "status": "Available",
+      "reason": "Injury/Illness - Right Finger Splint",
+      "team": "Los Angeles Lakers",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Walker Kessler",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Lower Leg Soreness",
+      "team": "Los Angeles Lakers",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Austin Reaves",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Heel Contusion / Bone Bruise",
+      "team": "Los Angeles Lakers",
+      "game_date": "11/17/2026"
+    },
+    {
+      "name": "Tyler Bilodeau",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Brooklyn Nets",
+      "game_date": "11/18/2026"
+    },
+    {
+      "name": "Joshua Jefferson",
+      "status": "Out",
+      "reason": "G League - On Assignment",
+      "team": "Brooklyn Nets",
+      "game_date": "11/18/2026"
+    },
+    {
+      "name": "Grant Nelson",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Brooklyn Nets",
+      "game_date": "11/18/2026"
+    },
+    {
+      "name": "Drake Powell",
+      "status": "Out",
+      "reason": "G League - On Assignment",
+      "team": "Brooklyn Nets",
+      "game_date": "11/18/2026"
+    },
+    {
+      "name": "Ben Saraf",
+      "status": "Out",
+      "reason": "G League - On Assignment",
+      "team": "Brooklyn Nets",
+      "game_date": "11/18/2026"
+    }
+  ]
 }
