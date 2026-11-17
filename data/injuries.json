@@ -1,0 +1,6 @@
+{
+  "updated_at": null,
+  "source": "Official NBA injury reports via nbainjuries",
+  "coverage_note": "Awaiting first successful GitHub Actions run. No injury status is confirmed.",
+  "players": []
+}

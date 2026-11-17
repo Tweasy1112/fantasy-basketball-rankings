@@ -34,3 +34,14 @@ The `scripts/update_stats.py` script pulls the 2026–27 regular-season NBA play
 ## Manual import fallback
 
 Use **Import game logs CSV**. Columns: `date,player_id,player,team,positions,pts,reb,ast,stl,blk,tov,week,dd`. The `week`, `positions`, and `dd` fields are optional; imported data is not saved across page refreshes.
+
+
+## Trade Calculator, Lineup Comparison and My Teams (new)
+
+The website now includes three optional tools powered by the same published `data/game_logs.csv` file:
+
+- **Trade Calculator:** Choose incoming/outgoing players and compare an experimental valuation. For uneven trades, see the combined replacement-player value needed to break even. The model uses historical weekly high scores shrunk toward game averages when samples are small, plus an approximate position-specific replacement baseline. It is a prototype valuation, not a validated projection.
+- **Lineup Comparison:** Build two 13-slot starting lineups (PG, SG, G×3, SF, PF, C, FC×2, Util×3), filter players by Yahoo eligibility, auto-optimize selected players across eligible slots, and compare projected weekly totals with strengths and drawbacks. G allows PG/SG; FC allows SF/PF/C; Util allows any. Only players with mapped Yahoo positions are selectable.
+- **My Teams:** Save/edit/rename/delete rosters in browser local storage. Import a saved team into a lineup, or start from scratch. Export/import JSON backups for moving between devices. No account, server, or automatic Yahoo roster syncing.
+
+**Important limitations:** This initial release does **not** integrate a verified injury feed, starting-lineup feed, minutes projections, or Yahoo transaction sync. Weekly high-score projections are heuristic and do not model exact future game schedules, lineup locks, or injury absences. The Yahoo position mapping is partial. The trade valuation and lineup comparison are experimental, and their numerical values should not be treated as guaranteed future performance. The existing rankings, daily stats workflow, and CSV schema are unchanged.
