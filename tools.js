@@ -62,12 +62,13 @@ function wireTradePickers(){
    const q=normalized(input.value);
    const taken=new Set([...tradeGive,...tradeGet].filter(Boolean).map(String));
    taken.delete(String(current()[i]));
-   matches=playerList().filter(x=>!taken.has(String(x.player.id))&&(!q||normalized(x.player.name).includes(q))).slice(0,35);
+   matches=q?playerList().filter(x=>!taken.has(String(x.player.id))&&normalized(x.player.name).includes(q)).slice(0,40):[];
    active=0;
+   if(!q){close();menu.innerHTML='';return;}
    menu.innerHTML=matches.length?matches.map((x,j)=>`<button type="button" role="option" class="trade-result${j===active?' active':''}" data-id="${E(x.player.id)}" aria-selected="${j===active}"><span>${E(x.player.name)}<small>${E(x.player.positions.join('/'))}</small></span><strong>${V(x.value)}</strong></button>`).join(''):'<div class="trade-no-results">No matching players</div>';
    menu.hidden=false;input.setAttribute('aria-expanded','true');
   }
-  input.addEventListener('focus',()=>{input.select();draw()});
+  input.addEventListener('focus',()=>{if(current()[i])input.select();if(input.value.trim()&&input.value!==getName(current()[i]))draw();});
   input.addEventListener('input',draw);
   input.addEventListener('keydown',e=>{
    if(e.key==='Escape'){close();input.blur();return;}
