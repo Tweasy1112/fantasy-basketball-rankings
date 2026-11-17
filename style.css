@@ -20,3 +20,18 @@
 .trade-picker .trade-result small{display:block;margin-top:3px;color:#a3b9d4;font-size:11px;font-weight:400;letter-spacing:normal}
 .trade-picker .trade-result strong{white-space:nowrap;color:#8fe1bd;font-size:13px;font-variant-numeric:tabular-nums}
 .trade-picker .trade-no-results{padding:13px;color:#a3b9d4;font-size:12px}
+
+/* Transparent trade adjustments, kept separate from player rows */
+.trade-breakdown{margin-top:15px;border:1px solid #344961;background:#101e32;border-radius:10px;padding:12px 14px;font-size:13px}
+.trade-breakdown h3{margin:0 0 10px;font-size:16px}
+.trade-breakdown-row{display:flex;justify-content:space-between;gap:14px;align-items:baseline;padding:7px 0;border-bottom:1px solid #283b55;color:#c2d2e6}
+.trade-breakdown-row:last-of-type{border-bottom:0}
+.trade-breakdown-row strong{color:#f3f7ff;white-space:nowrap;font-variant-numeric:tabular-nums}
+.trade-deduction strong{color:#ffb2b9}
+.trade-breakdown-total{font-weight:800;border-top:1px solid #5a708b;margin-top:4px}
+.trade-breakdown-total strong{color:#8fe1bd;font-size:19px}
+.trade-balance{margin-top:14px;padding:16px}
+.trade-suggestion{margin-top:10px;border-top:1px solid #47627e;background:#1a3045;padding:12px;border-radius:7px}
+.trade-suggestion strong{color:#8fe1bd}
+.injury-baseline{font-size:12px;color:#b6d8ed}
+.baseline-reset{background:#2a3e5d;color:#eaf3ff;border:1px solid #4d6682;border-radius:6px;padding:4px 7px;margin-left:6px;cursor:pointer}
