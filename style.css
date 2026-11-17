@@ -5,3 +5,6 @@
 
 /* Draft steals and busts */
 .draft-green{color:#34d399!important;font-weight:750}.draft-red{color:#fb7185!important;font-weight:750}.draft-neutral{color:#aab5c5}.draft-table td,.draft-table th{white-space:nowrap}.draft-table td:first-child{white-space:normal}.draft-controls{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:16px 0}.draft-controls select,.draft-controls input{background:#141e2d;color:#f5f7fa;border:1px solid #3d5066;border-radius:8px;padding:9px}.draft-table .draft-delta{font-weight:800}.draft-note{font-size:.88rem;opacity:.85;margin:10px 0}.draft-stat{font-weight:700;font-size:1.15rem}.draft-status{margin:14px 0}
+
+/* Fixed side-by-side top-25 draft boards */
+.draft-dual{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin:18px 0}.draft-column{min-width:0;border:1px solid #30445f;border-radius:14px;overflow:hidden;background:#142238}.draft-column h3{margin:0;padding:16px;font-size:1.05rem}.draft-steals h3{color:#34d399}.draft-busts h3{color:#fb7185}.draft-side-table{width:100%;font-size:.79rem}.draft-side-table th,.draft-side-table td{padding:10px 7px}.draft-side-table td:nth-child(2){min-width:105px;white-space:normal}.draft-side-table th{font-size:.66rem}.draft-side-table .right{text-align:right}.draft-column .tablewrap{overflow-x:auto}@media(max-width:850px){.draft-dual{grid-template-columns:1fr}}
