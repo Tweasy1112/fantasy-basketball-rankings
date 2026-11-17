@@ -6,6 +6,7 @@ const STORE='fantasy-basketball-teams-v1';
 let teams={};try{const obj=JSON.parse(localStorage.getItem(STORE)||'{}');if(obj&&typeof obj==='object'&&!Array.isArray(obj))teams=obj;}catch(e){}
 let rosterA=Array(13).fill(''),rosterB=Array(13).fill(''),tradeGive=['',''],tradeGet=['','',''];
 let rosterTeamA='',rosterTeamB='',activeTeam='',draftPlayers=[];
+let originalDraft=[],draftLoadError='';
 // Manual scenario only: never infer injuries from missing games or historical samples.
 const FAIR_TOLERANCE=550; // Experimental absolute adjusted-value tolerance, not a calibrated model.
 let tradeHorizon=8, injuryWeeks={}, injuryDates={}; // Manual total-duration overrides and optional onset dates.
@@ -157,7 +158,7 @@ function wireTradePickers(){
 function getVal(id){return model().get(String(id))?.value||0;}
 function getName(id){return model().get(String(id))?.player.name||'Unknown player';}
 function sum(ids){return ids.reduce((a,id)=>a+getVal(id),0);}
-function switchView(view){for(const v of ['rankings','trade','lineups','teams'])$(v+'View').hidden=v!==view;document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===view));if(view==='trade')renderTrade();if(view==='lineups')renderLineups();if(view==='teams')renderTeams();}
+function switchView(view){for(const v of ['rankings','trade','lineups','teams','draft'])$(v+'View').hidden=v!==view;document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===view));if(view==='trade')renderTrade();if(view==='lineups')renderLineups();if(view==='teams')renderTeams();if(view==='draft')renderDraft();}
 document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>switchView(b.dataset.view));
 function addSelector(side){let arr=side==='give'?tradeGive:tradeGet;arr.push('');renderTrade();}
 // Fair Trade Finder: ranked suggestions centered on the exact balancing value.
@@ -233,7 +234,34 @@ function showTeamEditor(){const t=teams[activeTeam];if(!t)return;const ids=t.pla
  $('teamEditor').querySelectorAll('[data-drop-id]').forEach(el=>el.onclick=()=>{t.players=t.players.filter(id=>String(id)!==el.dataset.dropId);showTeamEditor()});
  $('teamSave').onclick=()=>{t.updated=new Date().toISOString();t.lineup=optimize(t.players);persist();renderTeams()};
  $('teamRename').onclick=()=>{let name=prompt('New team name:',activeTeam);if(name===null)return;name=name.trim();if(!name||name===activeTeam)return;if(teams[name])return alert('That name is already used.');teams[name]=teams[activeTeam];delete teams[activeTeam];activeTeam=name;persist();renderTeams()};}
+// Historical Yahoo draft picks, persisted as a static CSV; redraft ranking is live from app.js.
+const draftKey=s=>String(s||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\b(jr|iii|ii|iv)\b/g,'').replace(/[^a-z0-9]/g,'');
+const draftAlias={'jimmybutler':'jimmybutleriii','pjwashington':'pjwashingtonjr','bobbyportis':'bobbyportisjr'};
+function draftPlayerKey(s){let k=draftKey(s);return draftAlias[k]||k;}
+async function loadDraft(){try{const r=await fetch('data/draft_results.csv',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const parsed=parseCSV(await r.text());originalDraft=parsed.filter(x=>x.player&&Number(x.draft_round)>0).map(x=>({name:x.player,round:Number(x.draft_round),pick:Number(x.draft_pick_in_round)}));if(!originalDraft.length)throw Error('No draft picks found');draftLoadError='';}catch(e){draftLoadError='Draft data unavailable: '+e.message;originalDraft=[];}if($('draftView')&&!$('draftView').hidden)renderDraft();}
+function draftAnalysis(){
+ const actual=aggregates().filter(p=>p.weeks>0).sort((a,b)=>b.avgHigh-a.avgHigh||b.totalHigh-a.totalHigh||a.name.localeCompare(b.name));
+ const original=new Map(originalDraft.map((p,i)=>[draftPlayerKey(p.name),{...p,overall:i+1}]));
+ const current=new Map();actual.forEach((p,i)=>{const key=draftPlayerKey(p.name);if(!current.has(key))current.set(key,{...p,rank:i+1,redraftRound:Math.ceil((i+1)/10)});});
+ const out=originalDraft.map((d,i)=>{const p=current.get(draftPlayerKey(d.name));return {name:d.name,originalRound:d.round,originalPick:i+1,avg:p?.avgHigh??null,weeks:p?.weeks??0,redraftRound:p?.redraftRound??null,redraftRank:p?.rank??null,change:p?d.round-p.redraftRound:null,undrafted:false};});
+ // Current performers not originally drafted are meaningful redraft steals.
+ for(const p of current.values()){const key=draftPlayerKey(p.name);if(!original.has(key)&&p.rank<=originalDraft.length){out.push({name:p.name,originalRound:null,originalPick:null,avg:p.avgHigh,weeks:p.weeks,redraftRound:p.redraftRound,redraftRank:p.rank,change:null,undrafted:true});}}
+ return out;
+}
+function renderDraft(){const root=$('draftView');if(!root)return;
+ if(!root.querySelector('#draftFilter'))root.innerHTML=`<section class="panel tool-pad"><div class="tool-heading"><div><h2>🏆 Draft Steals & Busts</h2><p class="muted">Original Yahoo draft versus a redraft using today's average weekly High Score rankings.</p></div></div><div class="draft-controls"><label>Show <select id="draftFilter"><option value="all">All players</option><option value="steals">🟢 Steals</option><option value="busts">🔴 Busts</option><option value="undrafted">Undrafted breakouts</option></select></label><label>Search <input id="draftSearch" placeholder="Player name"></label><label>Minimum active weeks <select id="draftMin"><option value="1">1 week</option><option value="2">2 weeks</option><option value="3">3 weeks</option><option value="4">4 weeks</option></select></label></div><div class="draft-status" id="draftSummary"></div><div class="tablewrap"><table class="draft-table"><thead><tr><th>PLAYER</th><th class="right">AVG WEEKLY HIGH SCORE</th><th class="right">WEEKS</th><th class="right">DRAFTED ROUND</th><th class="right">REDRAFT ROUND TODAY</th><th class="right">ROUND CHANGE</th></tr></thead><tbody id="draftRows"></tbody></table></div><p class="draft-note">Redraft uses every player with game logs (including undrafted players), ranked by average best game per active fantasy week. Ten picks per round. No-game drafted players are marked unranked. This measures production to date, not future projections; small samples and injuries can exaggerate movement.</p></section>`;
+ const filter=$('draftFilter'),search=$('draftSearch'),minimum=$('draftMin');
+ const draw=()=>{if(draftLoadError){$('draftSummary').textContent=draftLoadError;$('draftRows').innerHTML='';return;}if(!originalDraft.length){$('draftSummary').textContent='Loading original draft results…';return;}if(!rows.length){$('draftSummary').textContent='Waiting for NBA game logs…';return;}
+ const all=draftAnalysis(),min=Number(minimum.value),q=search.value.toLowerCase().trim();let selected=all.filter(p=>p.name.toLowerCase().includes(q)&&(p.weeks>=min||p.weeks===0&&min===1));
+ if(filter.value==='steals')selected=selected.filter(p=>p.change>0||p.undrafted);if(filter.value==='busts')selected=selected.filter(p=>p.change<0||p.avg===null);if(filter.value==='undrafted')selected=selected.filter(p=>p.undrafted);
+ selected.sort((a,b)=>{const impact=x=>x.undrafted?18-(x.redraftRound||18):x.change===null?-99:Math.abs(x.change);return impact(b)-impact(a)||(a.redraftRank??999)-(b.redraftRank??999)||a.name.localeCompare(b.name)});
+ const steals=all.filter(p=>p.change>0||p.undrafted).length,busts=all.filter(p=>p.change<0||p.avg===null).length;
+ $('draftSummary').innerHTML=`<span class="draft-stat">${originalDraft.length} original picks</span> · <span class="draft-green">${steals} steals / breakouts</span> · <span class="draft-red">${busts} busts / fallers</span> · Updated from current game logs`;
+ $('draftRows').innerHTML=selected.length?selected.map(p=>{const cls=p.undrafted||p.change>0?'draft-green':p.change<0||p.avg===null?'draft-red':'draft-neutral';const movement=p.undrafted?'UNDRAFTED → R'+p.redraftRound:p.change===null?'UNRANKED':p.change>0?'▲ '+p.change+' rounds':p.change<0?'▼ '+Math.abs(p.change)+' rounds':'—';return `<tr><td><strong>${E(p.name)}</strong>${p.undrafted?' <span class="tool-subtle">(free agent)</span>':''}</td><td class="right">${p.avg===null?'—':p.avg.toFixed(2)}</td><td class="right">${p.weeks||'—'}</td><td class="right">${p.originalRound===null?'Undrafted':'Round '+p.originalRound}</td><td class="right">${p.redraftRound===null?'Unranked':'Round '+p.redraftRound}</td><td class="right draft-delta ${cls}">${movement}</td></tr>`}).join(''):'<tr><td colspan="6">No matching players.</td></tr>';
+ };for(const el of [filter,search,minimum]){el.oninput=draw;el.onchange=draw;}draw();
+}
+loadDraft();
 // Data is loaded asynchronously by app.js. Refresh selectors once loading completes.
 loadInjuries();
-const previousRender=render;render=function(...args){const result=previousRender(...args);if(!$('tradeView').hidden)renderTrade();if(!$('lineupsView').hidden)renderLineups();return result};
+const previousRender=render;render=function(...args){const result=previousRender(...args);if(!$('tradeView').hidden)renderTrade();if(!$('lineupsView').hidden)renderLineups();if(!$('draftView').hidden)renderDraft();return result};
 })();
