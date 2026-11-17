@@ -287,11 +287,17 @@ function extendRankingStats(){
    const average=selected.length?(selected.reduce((n,r)=>n+Number(r[stat]||0),0)/selected.length).toFixed(stat==='dd'?2:1):'—';
    const seasonTotal=p.logs.reduce((n,r)=>n+Number(r[stat]||0),0);
    const totalLabel=Number.isInteger(seasonTotal)?seasonTotal.toLocaleString():seasonTotal.toFixed(1);
-   td.innerHTML='<span class="stat-average">'+average+'</span><span class="stat-season-total" title="Full season total">Σ '+totalLabel+'</span>';
+   td.innerHTML='<span class="stat-average">'+average+'</span><span class="stat-season-total" title="Season total">'+totalLabel+'</span>';
    tr.appendChild(td);
   }
  }
  table.classList.add('ranking-stats-table');
+ // Set column proportions explicitly so the browser cannot stretch player/position columns.
+ let cg=table.querySelector('colgroup.ranking-cols');
+ if(!cg){cg=document.createElement('colgroup');cg.className='ranking-cols';table.insertBefore(cg,table.firstChild);}
+ cg.innerHTML=[5,3,19,7,4,7,7,7,5.85,5.85,5.85,5.85,5.85,5.85,5.85].map(w=>'<col style="width:'+w+'%">').join('');
+ // Clean up legacy total markers if a previous script wrote them.
+ for(const el of body.querySelectorAll('.stat-season-total'))el.textContent=el.textContent.replace(/^\s*[Σ∑]\s*/,'').trim();
 }
 const previousRender=render;render=function(...args){const result=previousRender(...args);extendRankingStats();if(!$('tradeView').hidden)renderTrade();if(!$('lineupsView').hidden)renderLineups();if(!$('draftView').hidden)renderDraft();return result};
 render();

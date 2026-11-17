@@ -113,3 +113,52 @@ button{touch-action:manipulation}
 .ranking-stats-table .stat-average{display:block;font-size:inherit;font-weight:650;white-space:nowrap}
 .ranking-stats-table .stat-season-total{display:block;font-size:9px;opacity:.7;margin-top:3px;white-space:nowrap;font-weight:400}
 @media(max-width:760px){.ranking-stats-table .stat-season-total{font-size:9px}}
+
+/* Desktop: distribute width intentionally instead of stretching unused player/position columns. */
+@media(min-width:1051px){
+.ranking-stats-table{width:100%;min-width:0;table-layout:fixed}
+.ranking-stats-table th:nth-child(1),.ranking-stats-table td:nth-child(1){width:5%}
+.ranking-stats-table th:nth-child(2),.ranking-stats-table td:nth-child(2){width:3%}
+.ranking-stats-table th:nth-child(3),.ranking-stats-table td:nth-child(3){width:18%}
+.ranking-stats-table th:nth-child(4),.ranking-stats-table td:nth-child(4){width:7%}
+.ranking-stats-table th:nth-child(5),.ranking-stats-table td:nth-child(5){width:4%}
+.ranking-stats-table th:nth-child(6),.ranking-stats-table td:nth-child(6){width:7%}
+.ranking-stats-table th:nth-child(7),.ranking-stats-table td:nth-child(7){width:6%}
+.ranking-stats-table th:nth-child(8),.ranking-stats-table td:nth-child(8){width:7%}
+.ranking-stats-table th:nth-child(n+9),.ranking-stats-table td:nth-child(n+9){width:6.14%}
+.ranking-stats-table th,.ranking-stats-table td{padding-left:4px;padding-right:4px}
+}
+.ranking-stats-table .stat-season-total{font-size:11px;opacity:.88;font-weight:550;margin-top:3px;letter-spacing:0}
+.ranking-stats-table .stat-average{font-size:11px;font-weight:750}
+@media(max-width:760px){.ranking-stats-table .stat-season-total{font-size:11px}}
+/* Selected players summary should stay inside the rankings panel rather than expand across the screen. */
+.rank-compare{max-width:100%;box-sizing:border-box}
+
+/* Rankings visual polish: compact columns, consistent rhythm, legible stacked stats */
+@media (min-width:1051px){
+ #rankingsView .tablewrap{width:100%;overflow-x:auto}
+ #rankingsView .ranking-stats-table{width:100%;min-width:0;table-layout:fixed}
+ #rankingsView .ranking-stats-table th,
+ #rankingsView .ranking-stats-table td{padding:10px 5px;font-size:12px;line-height:1.3;vertical-align:middle}
+ #rankingsView .ranking-stats-table th{font-size:10px;letter-spacing:.025em;color:#a9bad2}
+ #rankingsView .ranking-stats-table th:nth-child(3),
+ #rankingsView .ranking-stats-table td:nth-child(3){width:19%;max-width:none}
+ #rankingsView .ranking-stats-table th:nth-child(4),
+ #rankingsView .ranking-stats-table td:nth-child(4){width:7%}
+ #rankingsView .ranking-stats-table .name{font-size:12px;line-height:1.3}
+ #rankingsView .ranking-stats-table .sub{font-size:10px}
+ #rankingsView .ranking-stats-table .extra-stat-head,
+ #rankingsView .ranking-stats-table .extra-stat-cell{width:auto;padding-left:5px;padding-right:5px}
+}
+#rankingsView .ranking-stats-table{font-variant-numeric:tabular-nums}
+#rankingsView .ranking-stats-table tbody tr{height:54px}
+#rankingsView .ranking-stats-table tbody tr:nth-child(even){background:rgba(255,255,255,.018)}
+#rankingsView .ranking-stats-table tbody tr:hover{background:#20324c}
+#rankingsView .ranking-stats-table .stat-average{display:block;font-size:12px;line-height:1.25;font-weight:750;color:#f0f6ff}
+#rankingsView .ranking-stats-table .stat-season-total{display:block;font-size:11px;line-height:1.25;margin-top:3px;font-weight:600;color:#9fb2d0;opacity:1}
+#rankingsView .ranking-stats-table .extra-stat-head{text-align:right}
+@media(max-width:1050px){
+ #rankingsView .ranking-stats-table{min-width:1040px}
+ #rankingsView .ranking-stats-table .stat-average{font-size:12px}
+ #rankingsView .ranking-stats-table .stat-season-total{font-size:11px}
+}
