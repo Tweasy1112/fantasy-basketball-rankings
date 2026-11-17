@@ -162,3 +162,10 @@ button{touch-action:manipulation}
  #rankingsView .ranking-stats-table .stat-average{font-size:12px}
  #rankingsView .ranking-stats-table .stat-season-total{font-size:11px}
 }
+
+/* Explicit overall draft and current rank in busts; maintain side-by-side tables. */
+.draft-busts .draft-side-table{width:100%;min-width:0;table-layout:auto}
+.draft-busts .draft-side-table th,.draft-busts .draft-side-table td{padding:8px 3px;font-size:10px;white-space:nowrap}
+.draft-busts .draft-side-table th:nth-child(2),.draft-busts .draft-side-table td:nth-child(2){white-space:normal;min-width:95px}
+.draft-busts .draft-side-table .draft-rank-cell{font-weight:700;font-variant-numeric:tabular-nums}
+@media(max-width:650px){.draft-busts .tablewrap{overflow-x:auto}.draft-busts .draft-side-table{min-width:610px}}
