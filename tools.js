@@ -11,7 +11,7 @@ const FAIR_TOLERANCE=550; // Experimental absolute adjusted-value tolerance, not
 let tradeHorizon=8, injuryWeeks={}, injuryDates={}; // Manual total-duration overrides and optional onset dates.
 let injuryFeed={updated_at:null,players:[],error:'Injury feed has not been generated yet.'};
 const injuryName=s=>String(s||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
-function reportFor(id){const name=getName(id);const key=injuryName(name);return injuryFeed.players.find(p=>injuryName(p.name)===key)||null;}
+function reportFor(id){const name=getName(id);const key=injuryName(name);return injuryFeed.players.find(p=>p.active!==false&&injuryName(p.name)===key)||null;}
 function injuryDisplay(id){const p=reportFor(id);if(!p)return '<span class="tool-subtle">No matching official report entry; this does not confirm healthy status.</span>';
  const status=E(p.status||'Unknown'),reason=E(p.reason||'Not specified'),date=E(p.game_date||'');
  return `<span class="injury-report"><strong>NBA report: ${status}</strong> · ${reason}${date?' · game '+date:''}</span>`;}
@@ -41,9 +41,9 @@ function injuryBaseline(id){
 // Dates and overrides are kept in memory for this session; no invented onset date.
 const INJURY_CAP_WEEKS=8, MAX_INJURY_DISCOUNT=0.80;
 function todayUTC(){const d=new Date();return Date.UTC(d.getFullYear(),d.getMonth(),d.getDate());}
-function elapsedInjuryDays(id){const date=injuryDates[String(id)];if(!/^\d{4}-\d{2}-\d{2}$/.test(date||''))return 0;const onset=Date.parse(date+'T00:00:00Z');if(!Number.isFinite(onset)||onset>todayUTC())return 0;return Math.floor((todayUTC()-onset)/86400000);}
+function elapsedInjuryDays(id){const date=injuryDates[String(id)]||reportFor(id)?.first_reported_at?.slice(0,10);if(!/^\d{4}-\d{2}-\d{2}$/.test(date||''))return 0;const onset=Date.parse(date+'T00:00:00Z');if(!Number.isFinite(onset)||onset>todayUTC())return 0;return Math.floor((todayUTC()-onset)/86400000);}
 function totalWeeksOut(id){const override=injuryWeeks[String(id)];return override===undefined?(injuryBaseline(id)?.weeks||0):Math.max(0,Number(override)||0);}
-function remainingInjuryDays(id){return Math.max(0,Math.ceil(totalWeeksOut(id)*7)-elapsedInjuryDays(id));}
+function remainingInjuryDays(id){const total=totalWeeksOut(id);if(!total)return 0;const date=injuryDates[String(id)]||reportFor(id)?.first_reported_at;if(!date)return Math.ceil(total*7);return Math.max(0,Math.ceil(total*7)-elapsedInjuryDays(id));}
 function weeksOut(id){return Math.ceil(remainingInjuryDays(id)/7);}
 // Convex injury-risk curve: additional weeks have increasingly severe marginal costs.
 // Maximum penalty is 80% of healthy value at eight remaining weeks; no penalty after recovery.
@@ -52,9 +52,9 @@ const scenarioFactor=id=>1-injuryRiskFraction(id);
 const adjustedVal=id=>getVal(id)*scenarioFactor(id);
 const injuryDeduction=id=>getVal(id)-adjustedVal(id);
 const injuryDeductionSum=ids=>ids.reduce((s,id)=>s+injuryDeduction(id),0);
-function tradeBreakdown(ids,heading){
- const base=sum(ids),loss=injuryDeductionSum(ids),adjusted=base-loss,premium=premiumSum(ids,starScale());
- return `<div class="trade-breakdown" aria-label="${E(heading)} value breakdown"><div class="trade-breakdown-row"><span>Players · healthy/base value</span><strong>${V(base)}</strong></div><div class="trade-breakdown-row trade-deduction"><span>Compounding injury-risk deduction</span><strong>−${V(loss)}</strong></div><div class="trade-breakdown-row"><span>Star / consolidation premium</span><strong>+${V(premium)}</strong></div><div class="trade-breakdown-row trade-breakdown-total"><span>Final adjusted trade total</span><strong>${V(adjusted+premium)}</strong></div></div>`;
+function tradeBreakdown(ids,opposingIds,heading){
+ const base=sum(ids),loss=injuryDeductionSum(ids),adjusted=base-loss,premium=packagePremium(ids,opposingIds,starScale());
+ return `<div class="trade-breakdown" aria-label="${E(heading)} value breakdown"><div class="trade-breakdown-row"><span>Players · healthy/base value</span><strong>${V(base)}</strong></div><div class="trade-breakdown-row trade-deduction"><span>Compounding injury-risk deduction</span><strong>−${V(loss)}</strong></div><div class="trade-breakdown-row"><span>Star / consolidation premium (increases with depth imbalance)</span><strong>+${V(premium)}</strong></div><div class="trade-breakdown-row trade-breakdown-total"><span>Final adjusted trade total</span><strong>${V(adjusted+premium)}</strong></div></div>`;
 }
 const adjustedSum=ids=>ids.reduce((s,id)=>s+adjustedVal(id),0);
 // Experimental consolidation premium. Added separately; never changes base player values.
@@ -62,17 +62,38 @@ const adjustedSum=ids=>ids.reduce((s,id)=>s+adjustedVal(id),0);
 function starScale(){return Math.max(1,...playerList().map(x=>x.value));}
 function starPremium(value,scale){return value<=0?0:0.55*value*Math.pow(value/scale,1.2);}
 function premiumSum(ids,scale){return ids.reduce((n,id)=>n+starPremium(adjustedVal(id),scale),0);}
+// Consolidation scarcity: when a side has fewer players, its strongest asset gets
+// an extra package-level premium. This grows with the number of extra players
+// on the opposing side, and never changes any player's underlying base value.
+function consolidationPremium(ids,opposingIds,scale){
+ const countGap=Math.max(0,opposingIds.length-ids.length);
+ if(!countGap||!ids.length)return 0;
+ const top=Math.max(...ids.map(adjustedVal));
+ const dominance=top/Math.max(1,adjustedSum(ids));
+ return top*0.13*countGap*Math.pow(top/scale,0.5)*dominance;
+}
+function packagePremium(ids,opposingIds,scale){return premiumSum(ids,scale)+consolidationPremium(ids,opposingIds,scale);}
 function effectivePlayerValue(value,scale){return value+starPremium(value,scale);}
 function tradeEquity(a,b){
- const scale=starScale(),givePremium=premiumSum(a,scale),receivePremium=premiumSum(b,scale);
+ const scale=starScale(),givePremium=packagePremium(a,b,scale),receivePremium=packagePremium(b,a,scale);
  const raw=adjustedSum(b)-adjustedSum(a),studAdjustment=receivePremium-givePremium;
  const effective=raw+studAdjustment,side=effective<0?'get':'give',shortfall=Math.abs(effective);
+ // Recompute consolidation on candidate additions rather than using a fixed target.
+ const receiving=side==='get'?b:a,other=side==='get'?a:b;
+ const evaluate=v=>{
+   const base=adjustedSum(receiving)+v;
+   const premium=premiumSum(receiving,scale)+starPremium(v,scale);
+   const count=receiving.length+1, gap=Math.max(0,other.length-count);
+   const top=Math.max(v,...receiving.map(adjustedVal));
+   const extra=gap?top*0.13*gap*Math.pow(top/scale,0.5)*(top/Math.max(1,base)):0;
+   const otherPremium=packagePremium(other,Array(count).fill(''),scale);
+   return base+premium+extra-(adjustedSum(other)+otherPremium);
+ };
  let lo=0,hi=Math.max(scale,shortfall+1);
- while(effectivePlayerValue(hi,scale)<shortfall&&hi<1e9)hi*=2;
- for(let i=0;i<55;i++){const mid=(lo+hi)/2;if(effectivePlayerValue(mid,scale)<shortfall)lo=mid;else hi=mid;}
+ while(evaluate(hi)<0&&hi<1e9)hi*=2;
+ for(let i=0;i<55;i++){const mid=(lo+hi)/2;if(evaluate(mid)<0)lo=mid;else hi=mid;}
  return {scale,givePremium,receivePremium,effective,raw,studAdjustment,side,target:(lo+hi)/2};
 }
-
 const playerMap=()=>new Map(aggregates().map(p=>[String(p.id),p]));
 const can=(slot,p)=>slot==='Util'||slot==='G'&&p.positions.some(x=>x==='PG'||x==='SG')||slot==='FC'&&p.positions.some(x=>['SF','PF','C'].includes(x))||p.positions.includes(slot);
 const median=a=>{if(!a.length)return 0;const b=[...a].sort((x,y)=>x-y);return b[Math.floor(b.length/2)]};
@@ -156,7 +177,7 @@ function fairTradeFinder(a,b){
  const heading=difference===0?'Current adjusted totals are exactly balanced':`To balance the adjusted trade, add approximately ${V(target)} in value to ${side==='get'?'You receive':'You give'}`;
  return `<section class="fair-finder"><div class="fair-header"><div><h3>Fair Trade Finder</h3><p class="tool-subtle">${E(heading)}. The list automatically centers on the closest match.</p></div><div class="fair-target">Target <strong>${V(target)}</strong><small>±${V(FAIR_TOLERANCE)} fair range</small></div></div>
  <div class="fair-finder-controls"><label class="tool-subtle" for="fairFilter">Filter player names</label><input id="fairFilter" class="tool-input" type="search" placeholder="Search first or last name…" autocomplete="off"><button type="button" class="tool-btn alt" id="fairJump">Recenter fair-value range</button></div>
- <div class="fair-list" id="fairList" role="list" aria-label="Available players ranked by injury-adjusted trade value">${pool.map((x,i)=>{const val=adjustedVal(x.player.id),gap=val-target,isFair=Math.abs(equity.effective+(side==='get'?1:-1)*effectivePlayerValue(val,equity.scale))<=FAIR_TOLERANCE;return `<div role="listitem" class="fair-player ${isFair?'fair-match':'fair-miss'}${i===pivot?' fair-pivot':''}" data-fair-index="${i}" data-fair-name="${E(normalized(x.player.name))}"><span class="fair-rank">#${i+1}</span><span class="fair-player-name"><strong>${E(x.player.name)}</strong><small>${E(x.player.positions.join('/'))}</small></span><span class="fair-number">${V(val)}</span><span class="fair-gap">${gap>0?'+':''}${V(gap)}</span><span class="fair-verdict">${isFair?'FAIR':'UNFAIR'}</span><button class="tool-btn alt fair-add" type="button" data-fair-id="${E(x.player.id)}" data-fair-side="${side}">+ ${side==='get'?'Receive':'Give'}</button></div>`;}).join('')}</div>
+ <div class="fair-list" id="fairList" role="list" aria-label="Available players ranked by injury-adjusted trade value">${pool.map((x,i)=>{const val=adjustedVal(x.player.id),gap=val-target,isFair=Math.abs(tradeEquity(side==='get'?a:[...a,x.player.id],side==='get'?[...b,x.player.id]:b).effective)<=FAIR_TOLERANCE;return `<div role="listitem" class="fair-player ${isFair?'fair-match':'fair-miss'}${i===pivot?' fair-pivot':''}" data-fair-index="${i}" data-fair-name="${E(normalized(x.player.name))}"><span class="fair-rank">#${i+1}</span><span class="fair-player-name"><strong>${E(x.player.name)}</strong><small>${E(x.player.positions.join('/'))}</small></span><span class="fair-number">${V(val)}</span><span class="fair-gap">${gap>0?'+':''}${V(gap)}</span><span class="fair-verdict">${isFair?'FAIR':'UNFAIR'}</span><button class="tool-btn alt fair-add" type="button" data-fair-id="${E(x.player.id)}" data-fair-side="${side}">+ ${side==='get'?'Receive':'Give'}</button></div>`;}).join('')}</div>
  <p class="tool-subtle">Green = resulting star/depth-adjusted gap within ±${V(FAIR_TOLERANCE)}; red = outside. Candidate gap shows player value minus the target. This is an experimental model, not a market trade guarantee.</p></section>`;
 }
 function wireFairTradeFinder(){
@@ -169,12 +190,12 @@ function wireFairTradeFinder(){
  list.onclick=e=>{const btn=e.target.closest('[data-fair-id]');if(!btn)return;const arr=btn.dataset.fairSide==='give'?tradeGive:tradeGet;const empty=arr.indexOf('');if(empty>=0)arr[empty]=btn.dataset.fairId;else arr.push(btn.dataset.fairId);renderTrade();};
 }
 function renderTrade(){let ready=playerList().length>0;
- const sideMarkup=side=>{const arr=side==='give'?tradeGive:tradeGet;return `<div class="tool-card"><h3>${side==='give'?'You give':'You receive'}</h3>${arr.map((id,i)=>`<div class="tool-row">${tradePicker(id,side,i)}<button class="small-action" data-remove="${side}" data-i="${i}" aria-label="Remove player">×</button></div>${id?(()=>{const baseline=injuryBaseline(id),manual=injuryWeeks[String(id)]!==undefined;return `<div class="trade-absence"><label>Estimated total injury weeks <input type="number" min="0" max="52" step="1" data-injury-id="${E(id)}" value="${totalWeeksOut(id)}"></label><label>Injury start date <input type="date" data-injury-date="${E(id)}" value="${E(injuryDates[String(id)]||'')}"></label><span class="injury-baseline">Remaining: <strong>${remainingInjuryDays(id)} days (${weeksOut(id)} rounded-up weeks)</strong> · ${injuryDates[String(id)]?'counting down from injury date':'enter injury date to enable countdown'}</span>${baseline?`<span class="injury-baseline">${manual?'Manual override':'Suggested baseline'}: ${baseline.weeks} weeks · ${E(baseline.label)} (${baseline.days} historical calendar days)${manual?` <button type="button" class="baseline-reset" data-reset-injury="${E(id)}">Reset suggestion</button>`:''}</span>`:'<span class="tool-subtle">No specific historical injury match — defaults to 0; edit if needed.</span>'}${injuryDisplay(id)}<span>Historical High Score avg: <strong>${(model().get(String(id))?.player.avgHigh||0).toFixed(2)}</strong></span></div>`;})():''}`).join('')}<div class="tool-actions"><button class="tool-btn alt" data-add="${side}">+ Add player</button></div>${tradeBreakdown(arr,side==='give'?'Outgoing':'Incoming')}</div>`};
- $('tradeView').innerHTML=`<section class="panel tool-pad"><div class="tool-heading"><div><h2>Trade Calculator</h2><p class="muted">Compare historical production, experimental trade values and injury-adjusted scenarios.</p></div></div>${!ready?'<p class="tool-notice">Waiting for NBA game logs and Yahoo positions.</p>':''}<div class="tool-control tool-horizon"><label for="tradeHorizon">Comparison horizon: <strong>${tradeHorizon} weeks</strong></label><input id="tradeHorizon" type="range" min="1" max="24" step="1" value="${tradeHorizon}"><p class="tool-subtle">For a specifically matched Out injury, a provisional total-duration baseline is suggested. Enter the injury start date to count down remaining days automatically on future visits. Remaining weeks always round up. Injury risk compounds and caps at an 80% discount after 8 remaining weeks; it falls to zero after the estimated return date.</p></div><p class="tool-subtle">Injury feed: ${injuryFeed.updated_at?E(injuryFeed.updated_at):'not yet available'}. No matching report entry does not mean healthy.</p><div class="tool-grid">${sideMarkup('give')}${sideMarkup('get')}</div><div id="tradeAnalysis"></div><p class="tool-footer">Historical baselines are manually entered reference medians, not a live Hashtag Basketball API, a verified remaining-time estimate, or a medical prognosis. They apply only to exact injury categories on official Out reports. Missing or nonspecific injuries default to zero until manually adjusted. Injury start dates are entered manually because the official report does not include verified onset dates. Estimates are experimental; no replacements or actual playoff odds are modeled. Star premium uses an experimental 0.55 × value × (value / highest player value)^1.2 curve inspired by KeepTradeCut’s published concept, NOT its proprietary algorithm. Trade values are experimental, not backtested.</p></section>`;
+ const sideMarkup=side=>{const arr=side==='give'?tradeGive:tradeGet;return `<div class="tool-card"><h3>${side==='give'?'You give':'You receive'}</h3>${arr.map((id,i)=>`<div class="tool-row">${tradePicker(id,side,i)}<button class="small-action" data-remove="${side}" data-i="${i}" aria-label="Remove player">×</button></div>${id?(()=>{const baseline=injuryBaseline(id),manual=injuryWeeks[String(id)]!==undefined;return `<div class="trade-absence"><label>Estimated total injury weeks <input type="number" min="0" max="52" step="1" data-injury-id="${E(id)}" value="${totalWeeksOut(id)}"></label><span class="injury-baseline">First seen: ${E(reportFor(id)?.first_reported_at?.slice(0,10)||'not tracked yet')}</span><span class="injury-baseline">Remaining: <strong>${remainingInjuryDays(id)} days (${weeksOut(id)} rounded-up weeks)</strong> · ${reportFor(id)?.first_reported_at?'auto countdown from first report':'awaiting tracked first report'}</span>${baseline?`<span class="injury-baseline">${manual?'Manual override':'Suggested baseline'}: ${baseline.weeks} weeks · ${E(baseline.label)} (${baseline.days} historical calendar days)${manual?` <button type="button" class="baseline-reset" data-reset-injury="${E(id)}">Reset suggestion</button>`:''}</span>`:'<span class="tool-subtle">No specific historical injury match — defaults to 0; edit if needed.</span>'}${injuryDisplay(id)}<span>Historical High Score avg: <strong>${(model().get(String(id))?.player.avgHigh||0).toFixed(2)}</strong><span class="trade-player-value">Base value: <strong>${V(getVal(id))}</strong> · Injury: <strong>−${V(injuryDeduction(id))}</strong> · Adjusted: <strong>${V(adjustedVal(id))}</strong></span></span></div>`;})():''}`).join('')}<div class="tool-actions"><button class="tool-btn alt" data-add="${side}">+ Add player</button></div>${tradeBreakdown(arr,side==='give'?tradeGet.filter(Boolean):tradeGive.filter(Boolean),side==='give'?'Outgoing':'Incoming')}</div>`};
+ $('tradeView').innerHTML=`<section class="panel tool-pad"><div class="tool-heading"><div><h2>Trade Calculator</h2><p class="muted">Compare historical production, experimental trade values and injury-adjusted scenarios.</p></div></div>${!ready?'<p class="tool-notice">Waiting for NBA game logs and Yahoo positions.</p>':''}<div class="tool-control tool-horizon"><label for="tradeHorizon">Comparison horizon: <strong>${tradeHorizon} weeks</strong></label><input id="tradeHorizon" type="range" min="1" max="24" step="1" value="${tradeHorizon}"><p class="tool-subtle">For a specifically matched Out injury, a provisional total-duration baseline is suggested. First-seen injury dates are recorded automatically by the GitHub updater; the countdown advances daily. Remaining weeks always round up. Injury risk compounds and caps at an 80% discount after 8 remaining weeks; it falls to zero after the estimated return date.</p></div><p class="tool-subtle">Injury feed: ${injuryFeed.updated_at?E(injuryFeed.updated_at):'not yet available'}. No matching report entry does not mean healthy.</p><div class="tool-grid">${sideMarkup('give')}${sideMarkup('get')}</div><div id="tradeAnalysis"></div><p class="tool-footer">Historical baselines are manually entered reference medians, not a live Hashtag Basketball API, a verified remaining-time estimate, or a medical prognosis. They apply only to exact injury categories on official Out reports. Missing or nonspecific injuries default to zero until manually adjusted. First-seen report timestamps are not necessarily actual injury onset dates; tracking starts after the new updater is installed. Estimates are experimental; no replacements or actual playoff odds are modeled. Star premium uses an experimental 0.55 × value × (value / highest player value)^1.2 curve inspired by KeepTradeCut’s published concept, NOT its proprietary algorithm. Trade values are experimental, not backtested.</p></section>`;
  wireTradePickers();
  $('tradeHorizon').oninput=e=>{tradeHorizon=+e.target.value;renderTrade()};
  $('tradeView').querySelectorAll('[data-injury-id]').forEach(el=>el.onchange=()=>{injuryWeeks[el.dataset.injuryId]=Math.max(0,Math.min(52,Math.ceil(Number(el.value)||0)));renderTrade()});
- $('tradeView').querySelectorAll('[data-injury-date]').forEach(el=>el.onchange=()=>{injuryDates[el.dataset.injuryDate]=el.value;renderTrade()});
+ 
  $('tradeView').querySelectorAll('[data-reset-injury]').forEach(el=>el.onclick=()=>{delete injuryWeeks[el.dataset.resetInjury];renderTrade()});
  $('tradeView').querySelectorAll('[data-add]').forEach(el=>el.onclick=()=>addSelector(el.dataset.add));
  $('tradeView').querySelectorAll('[data-remove]').forEach(el=>el.onclick=()=>{let arr=el.dataset.remove==='give'?tradeGive:tradeGet;arr.splice(+el.dataset.i,1);if(!arr.length)arr.push('');renderTrade()});
