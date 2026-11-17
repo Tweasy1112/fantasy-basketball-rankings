@@ -284,7 +284,10 @@ function extendRankingStats(){
   }
   for(const stat of ['pts','reb','ast','stl','blk','tov','dd']){
    const td=document.createElement('td');td.className='right extra-stat-cell';
-   td.textContent=selected.length?(selected.reduce((n,r)=>n+Number(r[stat]||0),0)/selected.length).toFixed(stat==='dd'?2:1):'—';
+   const average=selected.length?(selected.reduce((n,r)=>n+Number(r[stat]||0),0)/selected.length).toFixed(stat==='dd'?2:1):'—';
+   const seasonTotal=p.logs.reduce((n,r)=>n+Number(r[stat]||0),0);
+   const totalLabel=Number.isInteger(seasonTotal)?seasonTotal.toLocaleString():seasonTotal.toFixed(1);
+   td.innerHTML='<span class="stat-average">'+average+'</span><span class="stat-season-total" title="Full season total">Σ '+totalLabel+'</span>';
    tr.appendChild(td);
   }
  }
