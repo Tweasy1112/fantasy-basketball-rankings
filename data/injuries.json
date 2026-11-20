@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-19T17:40-05:00",
-  "report_snapshot_et": "2026-11-19T17:30-05:00",
+  "updated_at": "2026-11-19T22:59-05:00",
+  "report_snapshot_et": "2026-11-19T22:45-05:00",
   "source": "Official NBA injury reports via nbainjuries",
   "coverage_note": "Game-specific reports. First-seen is first observed by this updater, not injury onset. Missing players are not necessarily healthy.",
   "players": [
@@ -13,18 +13,18 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "LJ Cryer",
-      "status": "Questionable",
+      "status": "Available",
       "reason": "Injury/Illness - Left Low Back Soreness",
       "team": "Golden State Warriors",
       "game_date": "11/19/2026",
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Stephen Curry",
@@ -35,7 +35,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Draymond Green",
@@ -46,7 +46,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Moses Moody",
@@ -57,7 +57,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Kristaps Porzingis",
@@ -68,7 +68,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Brandon Williams",
@@ -79,7 +79,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Zach Edey",
@@ -90,7 +90,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "GG Jackson",
@@ -101,7 +101,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Ty Jerome",
@@ -112,7 +112,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Scotty Pippen Jr.",
@@ -123,7 +123,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Richie Saunders",
@@ -134,18 +134,18 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Isaiah Stewart",
-      "status": "Questionable",
+      "status": "Available",
       "reason": "Injury/Illness - Illness",
       "team": "Memphis Grizzlies",
       "game_date": "11/19/2026",
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Bradley Beal",
@@ -156,7 +156,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Brandon Ingram",
@@ -167,7 +167,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Nick Martinelli",
@@ -178,7 +178,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Jordan Miller",
@@ -189,7 +189,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Maliq Brown",
@@ -200,7 +200,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Ja'Kobi Gillespie",
@@ -211,7 +211,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Dylan Harper",
@@ -222,7 +222,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Tobias Harris",
@@ -233,7 +233,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Jayden Quaintance",
@@ -244,7 +244,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Joan Beringer",
@@ -255,7 +255,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Jaylen Clark",
@@ -266,7 +266,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Donte DiVincenzo",
@@ -277,7 +277,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Anthony Edwards",
@@ -288,18 +288,18 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Jonathan Kuminga",
-      "status": "Questionable",
+      "status": "Available",
       "reason": "Injury/Illness - Right Shoulder Contusion",
       "team": "Minnesota Timberwolves",
       "game_date": "11/19/2026",
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Zyon Pullin",
@@ -310,29 +310,29 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Deni Avdija",
-      "status": "Questionable",
+      "status": "Out",
       "reason": "Injury/Illness - Left Foot Inflammation / Soreness",
       "team": "Portland Trail Blazers",
       "game_date": "11/19/2026",
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Toumani Camara",
-      "status": "Questionable",
+      "status": "Available",
       "reason": "Injury/Illness - Abdominal Soreness",
       "team": "Portland Trail Blazers",
       "game_date": "11/19/2026",
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Branden Carlson",
@@ -343,7 +343,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Vit Krejci",
@@ -354,7 +354,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Ja Morant",
@@ -365,7 +365,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Shaedon Sharpe",
@@ -376,7 +376,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Robert Williams III",
@@ -387,7 +387,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Chris Youngblood",
@@ -398,7 +398,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T23:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Ousmane Dieng",
@@ -409,7 +409,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Kyle Kuzma",
@@ -420,7 +420,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Myles Turner",
@@ -431,7 +431,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Michael Ajayi",
@@ -442,7 +442,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Grayson Allen",
@@ -453,7 +453,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Kylan Boswell",
@@ -464,7 +464,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Kon Knueppel",
@@ -475,7 +475,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Dennis Schroder",
@@ -486,7 +486,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Grant Williams",
@@ -497,7 +497,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Rafael Castro",
@@ -508,7 +508,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "RayJ Dennis",
@@ -519,7 +519,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Kingston Flemings",
@@ -530,7 +530,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Mouhamed Gueye",
@@ -541,7 +541,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Jock Landale",
@@ -552,7 +552,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "CJ McCollum",
@@ -563,7 +563,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Asa Newell",
@@ -574,7 +574,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Henri Veesaar",
@@ -585,7 +585,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Jalen Wilson",
@@ -596,7 +596,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Johnny Furphy",
@@ -607,7 +607,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Tyrese Haliburton",
@@ -618,7 +618,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "T.J. McConnell",
@@ -629,7 +629,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Andrew Nembhard",
@@ -640,7 +640,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Ben Sheppard",
@@ -651,7 +651,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Braden Smith",
@@ -662,7 +662,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Khalifa Diop",
@@ -673,7 +673,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Evan Mobley",
@@ -684,7 +684,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Nae'Qwan Tomlin",
@@ -695,7 +695,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Jaylon Tyson",
@@ -706,7 +706,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Ernest Udeh Jr.",
@@ -717,7 +717,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Peyton Watson",
@@ -728,7 +728,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Paolo Banchero",
@@ -739,7 +739,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Jonathan Isaac",
@@ -750,7 +750,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Izaiyah Nelson",
@@ -761,7 +761,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Noah Penda",
@@ -772,7 +772,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Grant Nelson",
@@ -783,7 +783,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "RJ Barrett",
@@ -794,7 +794,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Nate Bittle",
@@ -805,7 +805,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Jaden Bradley",
@@ -816,7 +816,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Kawhi Leonard",
@@ -827,7 +827,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Kevin McCullar Jr.",
@@ -838,7 +838,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Collin Murray-Boyles",
@@ -849,7 +849,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Cade Cunningham",
@@ -860,7 +860,7 @@
       "active": true,
       "first_reported_at": "2026-11-18T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Jalen Duren",
@@ -871,7 +871,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Ronald Holland II",
@@ -882,7 +882,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Ebuka Okorie",
@@ -893,7 +893,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Ugonna Onyenso",
@@ -904,7 +904,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Taurean Prince",
@@ -915,7 +915,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Duncan Robinson",
@@ -926,7 +926,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Malik Dia",
@@ -937,7 +937,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Bennedict Mathurin",
@@ -948,7 +948,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Bryce McGowens",
@@ -959,7 +959,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Trey Murphy III",
@@ -970,7 +970,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Dejounte Murray",
@@ -981,7 +981,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Jaron Pierre Jr.",
@@ -992,7 +992,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Julian Reese",
@@ -1003,7 +1003,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Trendon Watford",
@@ -1014,7 +1014,73 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Alex Caruso",
+      "status": "Questionable",
+      "reason": "Injury/Illness - Right Hip Soreness",
+      "team": "Oklahoma City Thunder",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Chet Holmgren",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Knee/ Injury Recovery",
+      "team": "Oklahoma City Thunder",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Thomas Sorber",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Knee Surgery",
+      "team": "Oklahoma City Thunder",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Nikola Topic",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Hip Strain",
+      "team": "Oklahoma City Thunder",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Cason Wallace",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Shoulder Surgery",
+      "team": "Oklahoma City Thunder",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Jalen Williams",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Ankle Surgery",
+      "team": "Oklahoma City Thunder",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Reece Beekman",
@@ -1025,7 +1091,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Justin Champagnie",
@@ -1036,7 +1102,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Felix Okpara",
@@ -1047,7 +1113,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Tristan Vukcevic",
@@ -1058,7 +1124,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Jamir Watkins",
@@ -1069,7 +1135,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Tobe Awaka",
@@ -1080,7 +1146,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Noa Essengue",
@@ -1091,7 +1157,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Orlando Robinson",
@@ -1102,7 +1168,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Jaylin Sellers",
@@ -1113,7 +1179,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Dailyn Swain",
@@ -1124,7 +1190,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Caleb Wilson",
@@ -1135,46 +1201,282 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-19T17:30-05:00"
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Mark Williams",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Shoulder Surgery",
+      "team": "Phoenix Suns",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Jonas Aidoo",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Utah Jazz",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Kobe Bufkin",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Utah Jazz",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Harrison Ingram",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Utah Jazz",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Jaren Jackson Jr.",
+      "status": "Out",
+      "reason": "Injury/Illness - Right MCL Tear",
+      "team": "Utah Jazz",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Lauri Markkanen",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Hand Fracture",
+      "team": "Utah Jazz",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Jusuf Nurkic",
+      "status": "Out",
+      "reason": "Injury/Illness - Right 2nd Plantar Plate Tear",
+      "team": "Utah Jazz",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Steven Adams",
+      "status": "Questionable",
+      "reason": "Injury/Illness - Right Quadriceps Contusion",
+      "team": "Houston Rockets",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Clint Capela",
       "status": "Out",
       "reason": "Injury/Illness - Right Ankle Sprain",
       "team": "Houston Rockets",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Quadir Copeland",
       "status": "Out",
       "reason": "G League - Two-Way",
       "team": "Houston Rockets",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Julian Phillips",
       "status": "Out",
       "reason": "G League - Two-Way",
       "team": "Houston Rockets",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Alperen Sengun",
+      "status": "Questionable",
+      "reason": "Injury/Illness - Left Eye Corneal Abrasion",
+      "team": "Houston Rockets",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Bruce Thornton",
+      "status": "Out",
+      "reason": "G League - On Assignment",
+      "team": "Houston Rockets",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "DaRon Holmes II",
+      "status": "Out",
+      "reason": "G League - On Assignment",
+      "team": "Denver Nuggets",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Bryce Hopkins",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Denver Nuggets",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Julian Strawther",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Knee Sprain",
+      "team": "Denver Nuggets",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Cam Whitmore",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Denver Nuggets",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Precious Achiuwa",
+      "status": "Doubtful",
+      "reason": "Injury/Illness - Left Lower Leg Contusion",
+      "team": "Sacramento Kings",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "De'Andre Hunter",
+      "status": "Questionable",
+      "reason": "Injury/Illness - Left Hip Soreness / Tightness",
+      "team": "Sacramento Kings",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Jonathan Mogbo",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Sacramento Kings",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Sean Pedulla",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Sacramento Kings",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Maxime Raynaud",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Patella Subluxation",
+      "team": "Sacramento Kings",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Ben Simmons",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
+      "team": "Sacramento Kings",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Quentin Grimes",
+      "status": "Available",
+      "reason": "Injury/Illness - Right Finger Splint",
+      "team": "Los Angeles Lakers",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
+    },
+    {
+      "name": "Austin Reaves",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Heel Contusion / Bone Bruise",
+      "team": "Los Angeles Lakers",
+      "game_date": "11/20/2026",
+      "active": true,
+      "first_reported_at": "2026-11-19T22:45-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-19T22:45-05:00"
     },
     {
       "name": "Amen Thompson",
@@ -1491,58 +1793,6 @@
       "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
     },
     {
-      "name": "Chet Holmgren",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Knee/ Injury Recovery",
-      "team": "Oklahoma City Thunder",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Thomas Sorber",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Knee Surgery",
-      "team": "Oklahoma City Thunder",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Cason Wallace",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Shoulder Surgery",
-      "team": "Oklahoma City Thunder",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Jalen Williams",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Ankle Surgery",
-      "team": "Oklahoma City Thunder",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
       "name": "Jaylin Williams",
       "status": "Available",
       "reason": "Injury/Illness - Low Back Spasms",
@@ -1703,46 +1953,7 @@
       "last_reported_at": "2026-11-18T23:00-05:00"
     },
     {
-      "name": "DaRon Holmes II",
-      "status": "Out",
-      "reason": "G League - On Assignment",
-      "team": "Denver Nuggets",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
       "name": "Ryan Nembhard",
-      "status": "Out",
-      "reason": "G League - Two-Way",
-      "team": "Denver Nuggets",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Julian Strawther",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Knee Sprain",
-      "team": "Denver Nuggets",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Cam Whitmore",
       "status": "Out",
       "reason": "G League - Two-Way",
       "team": "Denver Nuggets",
@@ -1794,192 +2005,10 @@
       "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
     },
     {
-      "name": "Mark Williams",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Shoulder Surgery",
-      "team": "Phoenix Suns",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Precious Achiuwa",
-      "status": "Available",
-      "reason": "Injury/Illness - Left Lower Leg Contusion",
-      "team": "Sacramento Kings",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "De'Andre Hunter",
-      "status": "Available",
-      "reason": "Injury/Illness - Left Hip Soreness / Tightness",
-      "team": "Sacramento Kings",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Jonathan Mogbo",
-      "status": "Out",
-      "reason": "G League - Two-Way",
-      "team": "Sacramento Kings",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Sean Pedulla",
-      "status": "Out",
-      "reason": "G League - Two-Way",
-      "team": "Sacramento Kings",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Maxime Raynaud",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Patella Subluxation",
-      "team": "Sacramento Kings",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Ben Simmons",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
-      "team": "Sacramento Kings",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Kobe Bufkin",
-      "status": "Out",
-      "reason": "G League - Two-Way",
-      "team": "Utah Jazz",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
       "name": "Jaxson Hayes",
       "status": "Available",
       "reason": "Injury/Illness - Left Knee Strain",
       "team": "Utah Jazz",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Harrison Ingram",
-      "status": "Out",
-      "reason": "G League - Two-Way",
-      "team": "Utah Jazz",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Jaren Jackson Jr.",
-      "status": "Out",
-      "reason": "Injury/Illness - Right MCL Tear",
-      "team": "Utah Jazz",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Lauri Markkanen",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Hand Fracture",
-      "team": "Utah Jazz",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Jusuf Nurkic",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Foot; 2nd Plantar Plate Tear",
-      "team": "Utah Jazz",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-18T17:30-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Quentin Grimes",
-      "status": "Available",
-      "reason": "Injury/Illness - Right Finger Splint",
-      "team": "Los Angeles Lakers",
-      "game_date": "11/18/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-18T23:00-05:00",
-      "cleared_from_feed_at": "2026-11-19T17:30-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Austin Reaves",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Heel Contusion / Bone Bruise",
-      "team": "Los Angeles Lakers",
       "game_date": "11/18/2026",
       "active": false,
       "first_reported_at": "2026-11-17T23:15-05:00",
