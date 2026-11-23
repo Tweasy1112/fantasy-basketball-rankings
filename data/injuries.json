@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22T16:04-05:00",
-  "report_snapshot_et": "2026-11-22T16:00-05:00",
+  "updated_at": "2026-11-22T22:43-05:00",
+  "report_snapshot_et": "2026-11-22T22:30-05:00",
   "source": "Official NBA injury reports via nbainjuries",
   "coverage_note": "Game-specific reports. First-seen is first observed by this updater, not injury onset. Missing players are not necessarily healthy.",
   "players": [
@@ -13,7 +13,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Jalen Duren",
@@ -24,7 +24,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Ronald Holland II",
@@ -35,7 +35,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Isaac Jones",
@@ -46,7 +46,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Ebuka Okorie",
@@ -57,7 +57,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Ugonna Onyenso",
@@ -68,7 +68,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Taurean Prince",
@@ -79,7 +79,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Duncan Robinson",
@@ -90,7 +90,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Rafael Castro",
@@ -101,7 +101,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "RayJ Dennis",
@@ -112,7 +112,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Kingston Flemings",
@@ -123,7 +123,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Mouhamed Gueye",
@@ -134,7 +134,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Jock Landale",
@@ -145,7 +145,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "CJ McCollum",
@@ -156,7 +156,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Asa Newell",
@@ -167,7 +167,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Henri Veesaar",
@@ -178,7 +178,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Jalen Wilson",
@@ -189,7 +189,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Alex Caruso",
@@ -200,18 +200,18 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Shai Gilgeous-Alexander",
-      "status": "Questionable",
+      "status": "Out",
       "reason": "Injury/Illness - Low Back Contusion/ Neck Strain",
       "team": "Oklahoma City Thunder",
       "game_date": "11/22/2026",
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Chet Holmgren",
@@ -222,7 +222,18 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Aday Mara",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Shin Contusion",
+      "team": "Oklahoma City Thunder",
+      "game_date": "11/22/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Thomas Sorber",
@@ -233,7 +244,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Nikola Topic",
@@ -244,7 +255,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Cason Wallace",
@@ -255,7 +266,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Jalen Williams",
@@ -266,7 +277,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Jaylin Williams",
@@ -277,29 +288,29 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Giannis Antetokounmpo",
-      "status": "Questionable",
+      "status": "Out",
       "reason": "Injury/Illness - Right Groin tendinitis",
       "team": "Miami Heat",
       "game_date": "11/22/2026",
       "active": true,
       "first_reported_at": "2026-11-21T15:45-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Myron Gardner",
-      "status": "Probable",
+      "status": "Available",
       "reason": "Injury/Illness - Right Hamstring Tightness / Soreness",
       "team": "Miami Heat",
       "game_date": "11/22/2026",
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Vladislav Goldin",
@@ -310,7 +321,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Keshad Johnson",
@@ -321,7 +332,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T15:45-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Tarik Biberovic",
@@ -332,18 +343,18 @@
       "active": true,
       "first_reported_at": "2026-11-20T22:45-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Walter Clayton Jr.",
-      "status": "Questionable",
+      "status": "Available",
       "reason": "Injury/Illness - Left Patellar Tendinitis",
       "team": "Dallas Mavericks",
       "game_date": "11/22/2026",
       "active": true,
       "first_reported_at": "2026-11-20T22:45-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Sergio de Larrea",
@@ -354,7 +365,7 @@
       "active": true,
       "first_reported_at": "2026-11-20T22:45-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Tobi Lawal",
@@ -365,7 +376,7 @@
       "active": true,
       "first_reported_at": "2026-11-20T22:45-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Dereck Lively II",
@@ -376,7 +387,7 @@
       "active": true,
       "first_reported_at": "2026-11-20T22:45-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Caleb Martin",
@@ -387,18 +398,18 @@
       "active": true,
       "first_reported_at": "2026-11-20T22:45-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "P.J. Washington",
-      "status": "Doubtful",
+      "status": "Out",
       "reason": "Injury/Illness - Illness",
       "team": "Dallas Mavericks",
       "game_date": "11/22/2026",
       "active": true,
       "first_reported_at": "2026-11-21T15:45-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Jonas Aidoo",
@@ -409,7 +420,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Kobe Bufkin",
@@ -420,7 +431,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Harrison Ingram",
@@ -431,7 +442,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Jaren Jackson Jr.",
@@ -442,7 +453,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Lauri Markkanen",
@@ -453,7 +464,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Jusuf Nurkic",
@@ -464,7 +475,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "DaRon Holmes II",
@@ -475,7 +486,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Bryce Hopkins",
@@ -486,7 +497,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Julian Strawther",
@@ -497,7 +508,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Cam Whitmore",
@@ -508,7 +519,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Tobe Awaka",
@@ -519,7 +530,7 @@
       "active": true,
       "first_reported_at": "2026-11-22T16:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Nic Claxton",
@@ -530,7 +541,7 @@
       "active": true,
       "first_reported_at": "2026-11-22T16:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Norman Powell",
@@ -541,7 +552,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Orlando Robinson",
@@ -552,40 +563,40 @@
       "active": true,
       "first_reported_at": "2026-11-22T16:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Jaylin Sellers",
-      "status": "Out",
-      "reason": "G League - Two-Way",
+      "status": "Available",
+      "reason": "-",
       "team": "Chicago Bulls",
       "game_date": "11/22/2026",
       "active": true,
-      "first_reported_at": "2026-11-21T22:00-05:00",
+      "first_reported_at": "2026-11-22T22:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Jalen Smith",
-      "status": "Probable",
-      "reason": "Injury/Illness - Gastrointestinal Illness",
+      "status": "Available",
+      "reason": "-",
       "team": "Chicago Bulls",
       "game_date": "11/22/2026",
       "active": true,
-      "first_reported_at": "2026-11-21T22:00-05:00",
+      "first_reported_at": "2026-11-22T22:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Patrick Williams",
-      "status": "Probable",
-      "reason": "Injury/Illness - Left Thumb Sprain",
+      "status": "Available",
+      "reason": "-",
       "team": "Chicago Bulls",
       "game_date": "11/22/2026",
       "active": true,
-      "first_reported_at": "2026-11-21T22:00-05:00",
+      "first_reported_at": "2026-11-22T22:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Caleb Wilson",
@@ -596,7 +607,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Paolo Banchero",
@@ -607,7 +618,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Jonathan Isaac",
@@ -618,7 +629,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Izaiyah Nelson",
@@ -629,7 +640,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Noah Penda",
@@ -640,18 +651,18 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Deandre Ayton",
-      "status": "Questionable",
+      "status": "Available",
       "reason": "Injury/Illness - Illness",
       "team": "Washington Wizards",
       "game_date": "11/22/2026",
       "active": true,
       "first_reported_at": "2026-11-22T16:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Reece Beekman",
@@ -662,18 +673,18 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Bub Carrington",
-      "status": "Questionable",
+      "status": "Available",
       "reason": "Injury/Illness - Illness",
       "team": "Washington Wizards",
       "game_date": "11/22/2026",
       "active": true,
       "first_reported_at": "2026-11-22T16:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Justin Champagnie",
@@ -684,18 +695,18 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Felix Okpara",
-      "status": "Questionable",
+      "status": "Out",
       "reason": "G League - Two-Way",
       "team": "Washington Wizards",
       "game_date": "11/22/2026",
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Tristan Vukcevic",
@@ -706,7 +717,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Jamir Watkins",
@@ -717,7 +728,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Johnny Furphy",
@@ -728,7 +739,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Tyrese Haliburton",
@@ -739,7 +750,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "T.J. McConnell",
@@ -750,7 +761,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Ben Sheppard",
@@ -761,18 +772,18 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Pascal Siakam",
-      "status": "Questionable",
+      "status": "Available",
       "reason": "Injury/Illness - Left Hip Soreness / Tightness",
       "team": "Indiana Pacers",
       "game_date": "11/22/2026",
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "OG Anunoby",
@@ -783,7 +794,7 @@
       "active": true,
       "first_reported_at": "2026-11-20T22:45-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Jordan Clarkson",
@@ -794,18 +805,29 @@
       "active": true,
       "first_reported_at": "2026-11-20T17:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Miles McBride",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Left Adductor Tightness",
+      "team": "New York Knicks",
+      "game_date": "11/22/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Karl-Anthony Towns",
-      "status": "Questionable",
+      "status": "Available",
       "reason": "Injury/Illness - Illness",
       "team": "New York Knicks",
       "game_date": "11/22/2026",
       "active": true,
       "first_reported_at": "2026-11-21T15:45-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Paul George",
@@ -816,7 +838,7 @@
       "active": true,
       "first_reported_at": "2026-11-22T16:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Dillon Mitchell",
@@ -827,7 +849,7 @@
       "active": true,
       "first_reported_at": "2026-11-20T22:45-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Mitchell Robinson",
@@ -838,7 +860,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T15:45-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Amari Williams",
@@ -849,7 +871,7 @@
       "active": true,
       "first_reported_at": "2026-11-20T22:45-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Jimmy Butler III",
@@ -860,7 +882,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Stephen Curry",
@@ -871,7 +893,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Moses Moody",
@@ -882,7 +904,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Kristaps Porzingis",
@@ -893,7 +915,7 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Brandon Williams",
@@ -904,7 +926,227 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Cameron Boozer",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Ankle Sprain",
+      "team": "Memphis Grizzlies",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Jerami Grant",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Calf Strain",
+      "team": "Memphis Grizzlies",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "GG Jackson",
+      "status": "Out",
+      "reason": "Injury/Illness - Left 5th Metatarsal Fracture",
+      "team": "Memphis Grizzlies",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Scotty Pippen Jr.",
+      "status": "Out",
+      "reason": "Injury/Illness - Lumbar Disc Herniation",
+      "team": "Memphis Grizzlies",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Richie Saunders",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Knee Surgery",
+      "team": "Memphis Grizzlies",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Michael Ajayi",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Charlotte Hornets",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Grayson Allen",
+      "status": "Out",
+      "reason": "Concussion Protocol",
+      "team": "Charlotte Hornets",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Kylan Boswell",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Charlotte Hornets",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Kon Knueppel",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Hamstring Strain",
+      "team": "Charlotte Hornets",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Brandon Miller",
+      "status": "Probable",
+      "reason": "Injury/Illness - Right Knee Contusion / Bone Bruise",
+      "team": "Charlotte Hornets",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Dennis Schroder",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Hamstring Strain",
+      "team": "Charlotte Hornets",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Grant Williams",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Hamstring Injury Management",
+      "team": "Charlotte Hornets",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Vit Krejci",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Ankle Fracture",
+      "team": "Portland Trail Blazers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Ja Morant",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Hamstring Strain",
+      "team": "Portland Trail Blazers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Shaedon Sharpe",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Meniscus Surgery",
+      "team": "Portland Trail Blazers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Chris Youngblood",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Heel Contusion / Bone Bruise",
+      "team": "Portland Trail Blazers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Adem Bona",
+      "status": "Probable",
+      "reason": "Injury/Illness - Cervical Spine Sprain",
+      "team": "Philadelphia 76ers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Jaylen Brown",
+      "status": "Probable",
+      "reason": "Injury/Illness - Left Hamstring Strain",
+      "team": "Philadelphia 76ers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Ariel Hukporti",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Achilles Tendon Rupture / Tear",
+      "team": "Philadelphia 76ers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Dean Wade",
+      "status": "Probable",
+      "reason": "Injury/Illness - Left Hamstring Injury Management",
+      "team": "Philadelphia 76ers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Tyler Bilodeau",
@@ -915,7 +1157,7 @@
       "active": true,
       "first_reported_at": "2026-11-22T16:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Joshua Jefferson",
@@ -926,7 +1168,7 @@
       "active": true,
       "first_reported_at": "2026-11-22T16:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Chaney Johnson",
@@ -937,7 +1179,7 @@
       "active": true,
       "first_reported_at": "2026-11-22T16:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Grant Nelson",
@@ -948,7 +1190,7 @@
       "active": true,
       "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Drake Powell",
@@ -959,7 +1201,7 @@
       "active": true,
       "first_reported_at": "2026-11-22T16:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Ben Saraf",
@@ -970,7 +1212,7 @@
       "active": true,
       "first_reported_at": "2026-11-22T16:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Nolan Traore",
@@ -981,7 +1223,227 @@
       "active": true,
       "first_reported_at": "2026-11-22T16:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Joan Beringer",
+      "status": "Available",
+      "reason": "Injury/Illness - Face Mask",
+      "team": "Minnesota Timberwolves",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Jaylen Clark",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Hamstring Strain",
+      "team": "Minnesota Timberwolves",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Donte DiVincenzo",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
+      "team": "Minnesota Timberwolves",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Anthony Edwards",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Knee Arthroscopy",
+      "team": "Minnesota Timberwolves",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Rocco Zikarsky",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Minnesota Timberwolves",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Ousmane Dieng",
+      "status": "Questionable",
+      "reason": "Injury/Illness - Left Finger Fracture",
+      "team": "Milwaukee Bucks",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Kam Jones",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Milwaukee Bucks",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Bogoljub Markovic",
+      "status": "Out",
+      "reason": "G League - On Assignment",
+      "team": "Milwaukee Bucks",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "RJ Barrett",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Hamstring Strain",
+      "team": "Toronto Raptors",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Nate Bittle",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Toronto Raptors",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Kawhi Leonard",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Knee Injury Management",
+      "team": "Toronto Raptors",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Collin Murray-Boyles",
+      "status": "Probable",
+      "reason": "Concussion Protocol",
+      "team": "Toronto Raptors",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Zack Austin",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Cleveland Cavaliers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Khalifa Diop",
+      "status": "Out",
+      "reason": "G League - On Assignment",
+      "team": "Cleveland Cavaliers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Evan Mobley",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Great Toe Sprain",
+      "team": "Cleveland Cavaliers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Nae'Qwan Tomlin",
+      "status": "Out",
+      "reason": "Injury/Illness - Low Back Stress Reaction",
+      "team": "Cleveland Cavaliers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Jaylon Tyson",
+      "status": "Probable",
+      "reason": "Injury/Illness - Right Ankle Injury Management",
+      "team": "Cleveland Cavaliers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Ernest Udeh Jr.",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Cleveland Cavaliers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Ryan Dunn",
+      "status": "Questionable",
+      "reason": "Injury/Illness - Right Quad Soreness",
+      "team": "Phoenix Suns",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Mark Williams",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Shoulder Surgery",
+      "team": "Phoenix Suns",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Malik Dia",
@@ -992,7 +1454,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Bennedict Mathurin",
@@ -1003,7 +1465,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Bryce McGowens",
@@ -1014,7 +1476,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Trey Murphy III",
@@ -1025,7 +1487,7 @@
       "active": true,
       "first_reported_at": "2026-11-22T16:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Dejounte Murray",
@@ -1036,7 +1498,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Jaron Pierre Jr.",
@@ -1047,7 +1509,7 @@
       "active": true,
       "first_reported_at": "2026-11-22T16:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Julian Reese",
@@ -1058,7 +1520,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Trendon Watford",
@@ -1069,7 +1531,7 @@
       "active": true,
       "first_reported_at": "2026-11-17T23:15-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Zion Williamson",
@@ -1080,90 +1542,210 @@
       "active": true,
       "first_reported_at": "2026-11-21T22:00-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-22T16:00-05:00"
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
-      "name": "Ousmane Dieng",
+      "name": "Bradley Beal",
       "status": "Out",
-      "reason": "Injury/Illness - Left Finger Fracture",
-      "team": "Milwaukee Bucks",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
+      "reason": "Injury/Illness - Right Knee Injury Management",
+      "team": "LA Clippers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
-      "name": "Kam Jones",
+      "name": "Cam Christie",
       "status": "Out",
       "reason": "G League - Two-Way",
-      "team": "Milwaukee Bucks",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-20T17:15-05:00",
+      "team": "LA Clippers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
-      "name": "Bogoljub Markovic",
+      "name": "Nick Martinelli",
       "status": "Out",
-      "reason": "G League - On Assignment",
-      "team": "Milwaukee Bucks",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-20T17:15-05:00",
+      "reason": "G League - Two-Way",
+      "team": "LA Clippers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
       "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Jordan Miller",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Rotator Cuff Surgery",
+      "team": "LA Clippers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Quadir Copeland",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Houston Rockets",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Julian Phillips",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Houston Rockets",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "De'Aaron Fox",
+      "status": "Questionable",
+      "reason": "Injury/Illness - Right Shin Contusion",
+      "team": "San Antonio Spurs",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Dylan Harper",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Hip External Rotator Strain",
+      "team": "San Antonio Spurs",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Tobias Harris",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Calf Strain",
+      "team": "San Antonio Spurs",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Jordan McLaughlin",
+      "status": "Questionable",
+      "reason": "Injury/Illness - Left Shoulder Contusion",
+      "team": "San Antonio Spurs",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Jayden Quaintance",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Knee Surgery",
+      "team": "San Antonio Spurs",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Victor Wembanyama",
+      "status": "Questionable",
+      "reason": "Injury/Illness - Bilateral Low Back Tightness",
+      "team": "San Antonio Spurs",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Jonathan Mogbo",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Sacramento Kings",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Sean Pedulla",
+      "status": "Out",
+      "reason": "G League - Two-Way",
+      "team": "Sacramento Kings",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Maxime Raynaud",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Patella Subluxation",
+      "team": "Sacramento Kings",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Ben Simmons",
+      "status": "Out",
+      "reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
+      "team": "Sacramento Kings",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Quentin Grimes",
+      "status": "Available",
+      "reason": "Injury/Illness - Right Finger Splint",
+      "team": "Los Angeles Lakers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
+    },
+    {
+      "name": "Austin Reaves",
+      "status": "Out",
+      "reason": "Injury/Illness - Left Heel Contusion / Bone Bruise",
+      "team": "Los Angeles Lakers",
+      "game_date": "11/23/2026",
+      "active": true,
+      "first_reported_at": "2026-11-22T22:30-05:00",
+      "first_seen_source": "tracked_snapshot",
+      "last_reported_at": "2026-11-22T22:30-05:00"
     },
     {
       "name": "Dominick Barlow",
       "status": "Available",
       "reason": "Injury/Illness - Low Back Stress Reaction",
-      "team": "Philadelphia 76ers",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Adem Bona",
-      "status": "Out",
-      "reason": "Injury/Illness - Cervical Spine Sprain",
-      "team": "Philadelphia 76ers",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Jaylen Brown",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Hamstring Strain",
-      "team": "Philadelphia 76ers",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Ariel Hukporti",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Achilles Tendon Rupture / Tear",
       "team": "Philadelphia 76ers",
       "game_date": "11/21/2026",
       "active": false,
@@ -1181,19 +1763,6 @@
       "game_date": "11/21/2026",
       "active": false,
       "first_reported_at": "2026-11-20T17:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Dean Wade",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Hamstring Tightness / Soreness",
-      "team": "Philadelphia 76ers",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-18T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
       "last_reported_at": "2026-11-21T22:00-05:00",
       "cleared_from_feed_at": "2026-11-22T16:00-05:00",
@@ -1226,100 +1795,9 @@
       "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
     },
     {
-      "name": "Vit Krejci",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Ankle Fracture",
-      "team": "Portland Trail Blazers",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-18T23:00-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Ja Morant",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Hamstring Strain",
-      "team": "Portland Trail Blazers",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-18T23:00-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Shaedon Sharpe",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Meniscus Surgery",
-      "team": "Portland Trail Blazers",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-18T23:00-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Chris Youngblood",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Heel Contusion / Bone Bruise",
-      "team": "Portland Trail Blazers",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-18T23:00-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Bradley Beal",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Knee Injury Management",
-      "team": "LA Clippers",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-20T22:45-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
       "name": "Brandon Ingram",
       "status": "Out",
       "reason": "Injury/Illness - Right Heel Surgery",
-      "team": "LA Clippers",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-20T22:45-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Nick Martinelli",
-      "status": "Out",
-      "reason": "G League - Two-Way",
-      "team": "LA Clippers",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-20T22:45-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Jordan Miller",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Rotator Cuff Surgery",
       "team": "LA Clippers",
       "game_date": "11/21/2026",
       "active": false,
@@ -1356,74 +1834,9 @@
       "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
     },
     {
-      "name": "Cameron Boozer",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Ankle Sprain",
-      "team": "Memphis Grizzlies",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-20T22:45-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Jerami Grant",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Calf Strain",
-      "team": "Memphis Grizzlies",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-20T22:45-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "GG Jackson",
-      "status": "Out",
-      "reason": "Injury/Illness - Left 5th Metatarsal Fracture",
-      "team": "Memphis Grizzlies",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-20T22:45-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
       "name": "Ty Jerome",
       "status": "Available",
       "reason": "Injury/Illness - Right Hip Impingement",
-      "team": "Memphis Grizzlies",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-20T22:45-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Scotty Pippen Jr.",
-      "status": "Out",
-      "reason": "Injury/Illness - Lumbar Disc Herniation",
-      "team": "Memphis Grizzlies",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-20T22:45-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Richie Saunders",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Knee Surgery",
       "team": "Memphis Grizzlies",
       "game_date": "11/21/2026",
       "active": false,
@@ -1447,58 +1860,6 @@
       "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
     },
     {
-      "name": "Joan Beringer",
-      "status": "Available",
-      "reason": "Injury/Illness - Face Mask",
-      "team": "Minnesota Timberwolves",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-18T23:00-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Jaylen Clark",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Hamstring Strain",
-      "team": "Minnesota Timberwolves",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-18T23:00-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Donte DiVincenzo",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
-      "team": "Minnesota Timberwolves",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-18T23:00-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Anthony Edwards",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Knee Arthroscopy",
-      "team": "Minnesota Timberwolves",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-18T23:00-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
       "name": "Isaiah Evans",
       "status": "Available",
       "reason": "Injury/Illness - Illness",
@@ -1506,19 +1867,6 @@
       "game_date": "11/21/2026",
       "active": false,
       "first_reported_at": "2026-11-21T15:45-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Rocco Zikarsky",
-      "status": "Out",
-      "reason": "G League - Two-Way",
-      "team": "Minnesota Timberwolves",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-20T17:15-05:00",
       "first_seen_source": "tracked_snapshot",
       "last_reported_at": "2026-11-21T22:00-05:00",
       "cleared_from_feed_at": "2026-11-22T16:00-05:00",
@@ -1541,45 +1889,6 @@
       "name": "Ja'Kobi Gillespie",
       "status": "Out",
       "reason": "G League - Two-Way",
-      "team": "San Antonio Spurs",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-20T22:45-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Dylan Harper",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Hip External Rotator Strain",
-      "team": "San Antonio Spurs",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-20T22:45-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Tobias Harris",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Calf Strain",
-      "team": "San Antonio Spurs",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-20T22:45-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Jayden Quaintance",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Knee Surgery",
       "team": "San Antonio Spurs",
       "game_date": "11/21/2026",
       "active": false,
@@ -1629,136 +1938,6 @@
       "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
     },
     {
-      "name": "Jonathan Mogbo",
-      "status": "Out",
-      "reason": "G League - Two-Way",
-      "team": "Sacramento Kings",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-21T22:00-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Sean Pedulla",
-      "status": "Out",
-      "reason": "G League - Two-Way",
-      "team": "Sacramento Kings",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-21T22:00-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Maxime Raynaud",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Patella Subluxation",
-      "team": "Sacramento Kings",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-21T22:00-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Ben Simmons",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
-      "team": "Sacramento Kings",
-      "game_date": "11/21/2026",
-      "active": false,
-      "first_reported_at": "2026-11-21T22:00-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-21T22:00-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Michael Ajayi",
-      "status": "Out",
-      "reason": "G League - Two-Way",
-      "team": "Charlotte Hornets",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Grayson Allen",
-      "status": "Out",
-      "reason": "Concussion Protocol",
-      "team": "Charlotte Hornets",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-19T17:30-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Kylan Boswell",
-      "status": "Out",
-      "reason": "G League - Two-Way",
-      "team": "Charlotte Hornets",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Kon Knueppel",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Hamstring Strain",
-      "team": "Charlotte Hornets",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Dennis Schroder",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Hamstring Strain",
-      "team": "Charlotte Hornets",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Grant Williams",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Hamstring Injury Management",
-      "team": "Charlotte Hornets",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-19T17:30-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
       "name": "Andrew Nembhard",
       "status": "Available",
       "reason": "Injury/Illness - Left Hip Sprain",
@@ -1785,84 +1964,6 @@
       "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
     },
     {
-      "name": "Zack Austin",
-      "status": "Out",
-      "reason": "G League - Two-Way",
-      "team": "Cleveland Cavaliers",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-20T22:45-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Khalifa Diop",
-      "status": "Out",
-      "reason": "G League - On Assignment",
-      "team": "Cleveland Cavaliers",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-19T17:30-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Evan Mobley",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Great Toe Sprain",
-      "team": "Cleveland Cavaliers",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-18T17:30-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Nae'Qwan Tomlin",
-      "status": "Out",
-      "reason": "Injury/Illness - Low Back Stress Reaction",
-      "team": "Cleveland Cavaliers",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Jaylon Tyson",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Ankle Injury Management",
-      "team": "Cleveland Cavaliers",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Ernest Udeh Jr.",
-      "status": "Out",
-      "reason": "G League - Two-Way",
-      "team": "Cleveland Cavaliers",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-18T17:30-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
       "name": "Peyton Watson",
       "status": "Available",
       "reason": "Injury/Illness - Low Back Contusion",
@@ -1870,32 +1971,6 @@
       "game_date": "11/20/2026",
       "active": false,
       "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "RJ Barrett",
-      "status": "Out",
-      "reason": "Injury/Illness - Right Hamstring Strain",
-      "team": "Toronto Raptors",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-19T17:30-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Nate Bittle",
-      "status": "Out",
-      "reason": "G League - Two-Way",
-      "team": "Toronto Raptors",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
       "last_reported_at": "2026-11-20T22:45-05:00",
       "cleared_from_feed_at": "2026-11-22T16:00-05:00",
@@ -1915,19 +1990,6 @@
       "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
     },
     {
-      "name": "Kawhi Leonard",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Knee Injury Management",
-      "team": "Toronto Raptors",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
       "name": "Kevin McCullar Jr.",
       "status": "Out",
       "reason": "G League - Two-Way",
@@ -1935,19 +1997,6 @@
       "game_date": "11/20/2026",
       "active": false,
       "first_reported_at": "2026-11-17T23:15-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Collin Murray-Boyles",
-      "status": "Out",
-      "reason": "Concussion Protocol",
-      "team": "Toronto Raptors",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-19T17:30-05:00",
       "first_seen_source": "tracked_snapshot",
       "last_reported_at": "2026-11-20T22:45-05:00",
       "cleared_from_feed_at": "2026-11-22T16:00-05:00",
@@ -2006,19 +2055,6 @@
       "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
     },
     {
-      "name": "Mark Williams",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Shoulder Surgery",
-      "team": "Phoenix Suns",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-19T22:45-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
       "name": "Steven Adams",
       "status": "Available",
       "reason": "Injury/Illness - Right Quadriceps Contusion",
@@ -2035,32 +2071,6 @@
       "name": "Clint Capela",
       "status": "Out",
       "reason": "Injury/Illness - Right Ankle Sprain",
-      "team": "Houston Rockets",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-19T22:45-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Quadir Copeland",
-      "status": "Out",
-      "reason": "G League - Two-Way",
-      "team": "Houston Rockets",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-19T22:45-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Julian Phillips",
-      "status": "Out",
-      "reason": "G League - Two-Way",
       "team": "Houston Rockets",
       "game_date": "11/20/2026",
       "active": false,
@@ -2107,32 +2117,6 @@
       "first_seen_source": "tracked_snapshot",
       "last_reported_at": "2026-11-20T22:45-05:00",
       "cleared_from_feed_at": "2026-11-21T15:45-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Quentin Grimes",
-      "status": "Available",
-      "reason": "Injury/Illness - Right Finger Splint",
-      "team": "Los Angeles Lakers",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-19T22:45-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
-      "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
-    },
-    {
-      "name": "Austin Reaves",
-      "status": "Out",
-      "reason": "Injury/Illness - Left Heel Contusion / Bone Bruise",
-      "team": "Los Angeles Lakers",
-      "game_date": "11/20/2026",
-      "active": false,
-      "first_reported_at": "2026-11-19T22:45-05:00",
-      "first_seen_source": "tracked_snapshot",
-      "last_reported_at": "2026-11-20T22:45-05:00",
-      "cleared_from_feed_at": "2026-11-22T16:00-05:00",
       "clearance_note": "Absent from a later game-specific report covering this team; not medical clearance."
     },
     {
